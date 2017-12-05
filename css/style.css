@@ -1,4 +1,28 @@
 /* M O B I L E */
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+grid-template-areas: fb;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+.fa-instagram {
+    background: pink;
+    color: white;
+    grid-template-areas: inst;}
 
 .friends{width: 40%;
 padding-top: 10px;}
@@ -9,8 +33,17 @@ display: block;
     margin-left: auto;
     margin-right: auto;}
 h1{font-size: 2em;
-color:white;}
+color:white;
+    border: 1px white;}
 
+.foot{
+  text-align: center;
+   /* display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align: center;
+grid-template-areas: "fb" "inst";
+    */
+}
 span {
   text-transform: none;
   opacity: .5;
@@ -116,23 +149,29 @@ body input:checked ~ nav > ul > li {
     color:white;
     }
 .about{display: grid;
-grid-template-columns: 1fr 2fr 1fr;
-grid-template-rows: auto auto;
-grid-template-areas: "vid vid vid"
-    "abt abt abt";
-  margin: auto;
+       grid-template-columns: 1fr;
+       grid-template-areas: "vid" "abt" ;
+       grid-gap: 2em;
+       text-align: center;
 }
 
 .video{grid-area: vid;
 }
 .butik{grid-area: abt;
-border: 1px solid;}
+       padding-left: 13em;
+       padding-right: 13em;
+    color: white;
+    }
+
+footer{}
 h2{color:white;
 text-align: center;}
 .friends{width: 20%;}
 body{background-color: #2394ea;}
 
-
+.foot {grid-template-columns: auto auto auto auto;
+       grid-template-areas: /*padding-left: 10em;
+       padding-right: 10em;*/}
 
 ///*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu - little help*///
 
