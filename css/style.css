@@ -1,14 +1,18 @@
 /* M O B I L E */
 
-body{background-color: #2394ea;}
+body{background-color: #2394ea;
+font-family: "Arial";}
 
 
-
+.menu1{width: 40%;
+margin: auto;
+    position:relative;}
 .homebut{display: block;
     ;
     margin-left: auto;
     margin-right: auto;
-width: 40%;}
+;
+}
 
 
 .fa{
