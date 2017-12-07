@@ -113,16 +113,18 @@ nav {
   transition: .5s;
   transition-delay: .5s;
   overflow: hidden;
+    display: table-cell;
+    text-align: left;
 }
 
 /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
 nav > ul {
-text-align: center;
-position: absolute;
-display: block;
+    position:fixed;
+text-align: left;
     top: 60px;
-    left: 50px;
+    display: inline-block;
 }
+
 nav > ul > li {
   opacity: 0;
   transition: .5s;
@@ -155,6 +157,13 @@ body input:checked ~ nav {
 body input:checked ~ nav > ul > li {
   opacity: 1;
   transition-delay: .5s;
+}
+
+.bookingbutton{
+    width: 100px;
+    padding: 40px;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 #footwrapper{
