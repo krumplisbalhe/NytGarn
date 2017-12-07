@@ -3,6 +3,22 @@
 body{background-color: #2394ea;
 font-family: "Arial";}
 
+svg{
+    width: 100%;
+
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 .menu1{width: 40%;
 margin: auto;
@@ -161,7 +177,7 @@ body input:checked ~ nav > ul > li {
 
 .bookingbutton{
     width: 100px;
-    padding: 40px;
+    padding: 20px;
     margin-top: 30px;
     cursor: pointer;
 }
