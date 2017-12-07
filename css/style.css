@@ -48,14 +48,6 @@ h1{font-size: 2em;
 color:white;
     border: 1px white;}
 
-.foot{
-  text-align: center;
-   /* display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    text-align: center;
-grid-template-areas: "fb" "inst";
-    */
-}
 span {
   text-transform: none;
   opacity: .5;
@@ -161,7 +153,11 @@ body input:checked ~ nav > ul > li {
   transition-delay: .5s;
 }
 
+#footwrapper{
+    position: relative;
+}
 .foot{
+    text-align: center;
     position: absolute;
     bottom: 20px;
     width: 100%;
