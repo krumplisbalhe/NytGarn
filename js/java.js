@@ -1,27 +1,25 @@
-function getAllHairdressers() {
+function getData(){
     fetch("http://zawropati.com/GARN/wp-json/wp/v2/hairdressers")
     .then(res=>res.json())
-    .then(showHairdressers);
-
-
+    .then(showHairdressers)
 }
 
 function showHairdressers(data){
     let list = document.querySelector("#aboutlist");
     let template = document.querySelector("#hairdressersTemplate").content;
 
-                 data.forEach(function(oneHairdresser){
-        console.log(oneHairdresser)
-        let clone = template.cloneNode(true);
-        let name = clone.querySelector("h1");
+    data.forEach (function(theHairdresser){
+        console.log(theHairdresser)
+    let clone = template.cloneNode(true);
+        let name = clone.querySelector(".name");
+        name.textContent = theHairdresser.acf.name;
         let description = clone.querySelector(".description");
+        description.textContent = theHairdresser.acf.description;
+         let image = clone.querySelector(".image");
 
-        let img = clone.querySelector("img");
 
-        title.textContent = oneEvent.title.rendered;
-        price.textContent = oneEvent.acf.price;
-        venue.textContent = oneEvent.acf.venue;
-        var dateString = oneEvent.acf.date;
-                 }
-                              getData();
+    list.appendChild(clone);
+})
 
+}
+getData();
