@@ -1,5 +1,14 @@
 /* M O B I L E */
+
 body{background-color: #2394ea;}
+
+
+
+.homebut{display: block;
+    ;
+    margin-left: auto;
+    margin-right: auto;
+width: 40%;}
 
 
 .fa{
@@ -162,6 +171,15 @@ body input:checked ~ nav > ul > li {
 
 @media (min-width: 600px){
 
+  
+    .homebut{width: 10%;}
+
+
+    .logo{width:30%;
+           display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
 
 .logo{width:30%;
     display: block;
@@ -179,6 +197,18 @@ h1{font-size: 1em;
        grid-gap: 2em;
        text-align: center;
 }
+
+.they{
+      display:inline;
+grid-template-columns:1fr;
+
+}
+
+.mia{grid-area: mia;
+border: 1px solid black;}
+
+.malue{grid-area: mal;;
+border:1px solid black;;}
 
 .video{grid-area: vid;
 }
