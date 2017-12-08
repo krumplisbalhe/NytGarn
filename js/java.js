@@ -19,7 +19,43 @@ function showHairdressers(data){
 
 
     list.appendChild(clone);
+});
+
+
+
+}
+
+function getData(){
+    fetch("http://zawropati.com/GARN/wp-json/wp/v2/prices")
+    .then(res=>res.json())
+    .then(showPrices)
+}
+
+function showPrices(data){
+
+    let pricelist = document.querySelector("#pricelist");
+    let pricestemplate = document.querySelector("#pricesTemplate").content;
+
+    data.forEach(function(aPrice){
+        console.log(aPrice)
+   let clone = pricestemplate.cloneNode(true);
+        let title = clone.querySelector(".title");
+        title.textContent = aPrice.title.rendered;
+        let price = clone.querySelector(".price");
+        price.textContent = aPrice.acf.price;
+     pricelist.appendChild(clone);
+
+       /*  let name = clone.querySelector(".name");
+        name.textContent = theHairdresser.acf.name;
+        let description = clone.querySelector(".description");
+        description.textContent = theHairdresser.acf.description;
+         let image = clone.querySelector(".image");
+
+
+     */
 })
 
 }
+
+
 getData();
