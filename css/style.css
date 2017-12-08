@@ -1,12 +1,12 @@
 /* M O B I L E  V I E W*/
 body {
-    background-color: #0c77d2;
+    background-color: #2394ea;
     font-family: "Arial";
 }
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
 .svgcontainer {
     margin: auto;
-    padding-top: 100px;
+    padding-top:150px;
 }
 
 svg {
@@ -31,11 +31,11 @@ svg {
 .homebut {
     display: block;
     ;
-    width: 28%;
     margin-left: auto;
     margin-right: auto;
     ;
 }
+/*Footer icons*/
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -50,16 +50,11 @@ svg {
     opacity: 0.7;
 }
 .fa-facebook {
-    background: #3B5998;
     color: white;
 }
 .fa-instagram {
-    background: pink;
     color: white;
-    grid-template-areas: inst;
 }
-
-.instaicon{width: 5%;}
 
 .friends {
     width: 40%;
@@ -74,8 +69,8 @@ svg {
 }
 h1 {
     font-size: 2em;
-    color: #fcf150;
-   ;
+    color: white;
+    border: 1px white;
 }
 
 /*BURGER MENU MOBILE*/
@@ -230,6 +225,7 @@ body input:checked ~ nav > ul > li {
     }
 
 
+
 /*Mia and Malu subpage*/
 
 /* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
@@ -250,6 +246,7 @@ body input:checked ~ nav > ul > li {
        padding-left: 40px;
     text-align: center
 	}
+
 
     .logo {
         width: 30%;
@@ -385,15 +382,19 @@ body input:checked ~ nav > ul > li {
         overflow: hidden;
          display: flex;
     text-align: left;
+        flex-direction: row;
 
     }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
 
     nav > ul {
-            position: fixed;
+    position: fixed;
+    margin-top: 60px;
     text-align: left;
-    top: 60px;
-    display: inline-block;
+    top: 100px;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     nav > ul > li {
@@ -404,6 +405,8 @@ body input:checked ~ nav > ul > li {
 
     li {
         list-style-type: none;
+        display: inline;
+
     }
 
     nav > ul > li > a {
@@ -430,7 +433,7 @@ body input:checked ~ nav > ul > li {
 
     h1 {
         font-size: 1em;
-        color:#fcf150;
+        color: white;
     }
 
     .about {
