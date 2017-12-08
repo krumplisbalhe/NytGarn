@@ -41,6 +41,7 @@ svg {
     margin-left: auto;
     margin-right: auto;
     ;
+    width: 30%;
 }
 /*Footer icons*/
 .fa {
@@ -62,6 +63,8 @@ svg {
 .fa-instagram {
     color: white;
 }
+
+
 
 .friends {
     width: 40%;
@@ -203,6 +206,7 @@ body input:checked ~ nav > ul > li {
 }
 
 /*Mia and Malu subpage*/
+.instaicon{width: 8%;}
 .mmcontainer {
     padding: 0;
     margin: 0;
@@ -227,7 +231,7 @@ body input:checked ~ nav > ul > li {
     }
 
     .homebut {
-        width: 10%;
+        width: 12%;
     }
 
 
@@ -235,7 +239,7 @@ body input:checked ~ nav > ul > li {
 /*Mia and Malu subpage*/
 
 /* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
-
+.instaicon{width: 8%;}
 
 .miamaluecontent{
 	  -moz-column-count: 2;
@@ -261,8 +265,7 @@ body input:checked ~ nav > ul > li {
         margin-right: auto;
     }
 
-    .homebut {
-        width: 10%;
+
     }
 
     .logo {
