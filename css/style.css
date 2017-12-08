@@ -3,7 +3,6 @@
 body {
     background-color: #2394ea;
     font-family: "Arial";
-    height: 100%;
 }
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
 .svgcontainer {
@@ -193,11 +192,9 @@ body input:checked ~ nav > ul > li {
 /*FOOTER*/
 
 .foot {
-    position: absolute;
-  right: 0;
   bottom: 0;
-  left: 0;
   text-align: center;
+    padding-top: 100px;
 }
 
 /*Mia and Malu subpage*/
