@@ -6,7 +6,7 @@ body {
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
 .svgcontainer {
     margin: auto;
-    padding-top: 100px;
+    padding-top:150px;
 }
 
 svg {
@@ -35,6 +35,7 @@ svg {
     margin-right: auto;
     ;
 }
+/*Footer icons*/
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -49,14 +50,12 @@ svg {
     opacity: 0.7;
 }
 .fa-facebook {
-    background: #3B5998;
     color: white;
 }
 .fa-instagram {
-    background: pink;
     color: white;
-    grid-template-areas: inst;
 }
+
 .friends {
     width: 40%;
     padding-top: 10px;
@@ -359,15 +358,19 @@ body input:checked ~ nav > ul > li {
         overflow: hidden;
          display: flex;
     text-align: left;
+        flex-direction: row;
 
     }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
 
     nav > ul {
-            position: fixed;
+    position: fixed;
+    margin-top: 60px;
     text-align: left;
-    top: 60px;
-    display: inline-block;
+    top: 100px;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     nav > ul > li {
@@ -378,6 +381,8 @@ body input:checked ~ nav > ul > li {
 
     li {
         list-style-type: none;
+        display: inline;
+
     }
 
     nav > ul > li > a {
