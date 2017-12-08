@@ -10,6 +10,7 @@ svg {
     width: 100%;
 
 }
+.book{width: 30%}
 
 .path {
    margin: auto;
@@ -249,7 +250,7 @@ body input:checked ~ nav > ul > li {
 /* LAPTOP */
 
 @media (min-width: 600px) {
-
+.book{width: 30%}
 
     .homebut {
         width: 10%;
