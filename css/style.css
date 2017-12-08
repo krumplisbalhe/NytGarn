@@ -1,8 +1,14 @@
 /* M O B I L E  V I E W*/
+html{
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     background-color: #2394ea;
     font-family: "Arial";
+    margin: 0 0 100px;
+    padding: 25px;
 }
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
 .svgcontainer {
@@ -192,9 +198,13 @@ body input:checked ~ nav > ul > li {
 /*FOOTER*/
 
 .foot {
-  bottom: 0;
-  text-align: center;
-    padding-top: 100px;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    text-align: center;
 }
 
 /*Mia and Malu subpage*/
@@ -214,6 +224,15 @@ body input:checked ~ nav > ul > li {
     float: left;
     width: 50vw;
     height: 100vh;
+}
+
+/*Join us subpage*/
+.widgetholder{
+    max-width: 800px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /* L A P T O P  V I E W */
