@@ -19,19 +19,19 @@ function showHairdressers(data){
 
 
     list.appendChild(clone);
-});
+})
 
 
 
 }
 
-function getData(){
+function getPrices(){
     fetch("http://zawropati.com/GARN/wp-json/wp/v2/prices")
     .then(res=>res.json())
     .then(showPrices)
 }
 
-function showPrices(data){
+function showPrices(prices){
 
     let pricelist = document.querySelector("#pricelist");
     let pricestemplate = document.querySelector("#pricesTemplate").content;
