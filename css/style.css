@@ -243,8 +243,12 @@ body input:checked ~ nav > ul > li {
 	  -webkit-column-gap: 10px;
 	  -webkit-column-rule: none;
 	column-count: 2;
-	column-gap: 10px;
+	column-gap: 100px;
 	column-rule: none;
+    padding-bottom: 40px;
+       padding-right: 40px;
+       padding-left: 40px;
+    text-align: center
 	}
 
     .logo {
