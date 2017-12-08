@@ -1,6 +1,6 @@
 /* M O B I L E  V I E W*/
 body {
-    background-color: #2394ea;
+    background-color: #0c77d2;
     font-family: "Arial";
 }
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
@@ -31,6 +31,7 @@ svg {
 .homebut {
     display: block;
     ;
+    width: 28%;
     margin-left: auto;
     margin-right: auto;
     ;
@@ -57,6 +58,9 @@ svg {
     color: white;
     grid-template-areas: inst;
 }
+
+.instaicon{width: 5%;}
+
 .friends {
     width: 40%;
     padding-top: 10px;
@@ -70,8 +74,8 @@ svg {
 }
 h1 {
     font-size: 2em;
-    color: white;
-    border: 1px white;
+    color: #fcf150;
+   ;
 }
 
 /*BURGER MENU MOBILE*/
@@ -224,6 +228,24 @@ body input:checked ~ nav > ul > li {
     .homebut {
         width: 10%;
     }
+
+
+/*Mia and Malu subpage*/
+
+/* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
+
+
+.miamaluecontent{
+	  -moz-column-count: 2;
+	  -moz-column-gap: 10px;
+	  -moz-column-rule: none;
+	  -webkit-column-count: 2;
+	  -webkit-column-gap: 10px;
+	  -webkit-column-rule: none;
+	column-count: 2;
+	column-gap: 10px;
+	column-rule: none;
+	}
 
     .logo {
         width: 30%;
@@ -404,7 +426,7 @@ body input:checked ~ nav > ul > li {
 
     h1 {
         font-size: 1em;
-        color: white;
+        color:#fcf150;
     }
 
     .about {
