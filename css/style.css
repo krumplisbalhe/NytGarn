@@ -1,18 +1,21 @@
-/* M O B I L E */
-
+/* M O B I L E  V I E W*/
 body {
     background-color: #2394ea;
     font-family: "Arial";
 }
-
-.svgcontainer{margin: auto;
-padding-top: 100px;}
-
+/*SVG ANIMATED PICTURE ON MAIN PAGE*/
+.svgcontainer {
+    margin: auto;
+    padding-top: 100px;
+}
 
 svg {
     width: 100%;
 }
-.book{width: 30%}
+
+.book {
+    width: 30%
+}
 
 .path {
     stroke-dasharray: 1000;
@@ -24,21 +27,6 @@ svg {
     to {
         stroke-dashoffset: 0;
     }
-
-}
-
-.menu1 {
-    width: 40%;
-    margin: auto;
-    position: relative;
-}
-
-}
-
-.menu1 {
-    width: 40%;
-    margin: auto;
-    position: relative;
 }
 .homebut {
     display: block;
@@ -47,8 +35,6 @@ svg {
     margin-right: auto;
     ;
 }
-
-
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -59,27 +45,22 @@ svg {
     text-decoration: none;
     grid-template-areas: fb;
 }
-
 .fa:hover {
     opacity: 0.7;
 }
-
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-
 .fa-instagram {
     background: pink;
     color: white;
     grid-template-areas: inst;
 }
-
 .friends {
     width: 40%;
     padding-top: 10px;
 }
-
 .logo {
     width: 70%;
     display: block;
@@ -87,24 +68,23 @@ svg {
     margin-left: auto;
     margin-right: auto;
 }
-
 h1 {
     font-size: 2em;
     color: white;
     border: 1px white;
 }
 
+/*BURGER MENU MOBILE*/
+/*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
 span {
     text-transform: none;
     opacity: .5;
     font-weight: 300;
     font-size: 12px;
 }
-
 #burger {
     display: none;
 }
-
 label {
     position: fixed;
     top: 40px;
@@ -113,7 +93,6 @@ label {
     width: 15px;
     z-index: 5;
 }
-
 label span {
     position: absolute;
     width: 100%;
@@ -125,82 +104,63 @@ label span {
     background: #020304;
     transition: .5s;
 }
-
 label span:first-child {
     top: 3px;
 }
-
 label span:last-child {
     top: 16px;
 }
-
 body label:hover {
     cursor: pointer;
 }
 
-
-/*our burger menu button movement 'animation;*/
-
+/* burger button movement 'animation' on MOBILE */
 body input:checked + label span {
     opacity: 0;
     top: 50%;
 }
-
 body input:checked + label span:first-child {
     opacity: 1;
     transform: rotate(405deg);
 }
-
 body input:checked + label span:last-child {
     opacity: 1;
     transform: rotate(-405deg);
 }
-
 nav {
     background: #e2dc26;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* z-index: 3;*/
     transition: .5s;
     transition-delay: .5s;
     overflow: hidden;
-
-    display: table-cell;
-
     display: flex;
     justify-content: center;
-
     text-align: left;
 }
 
-
 /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-
 nav > ul {
     position: fixed;
     text-align: left;
     top: 60px;
     display: inline-block;
 }
-
 nav > ul > li {
     opacity: 0;
-    transition: .5s;
+    transition: 0s;
     transition-delay: 0s;
 }
-
 li {
     list-style-type: none;
 }
-
 a {
     float: none;
     padding: 0;
     display: block;
 }
-
 nav > ul > li > a {
     text-decoration: none;
     text-transform: uppercase;
@@ -209,17 +169,16 @@ nav > ul > li > a {
     font-family: sans-serif;
     line-height: 400%;
 }
-
 body input:checked ~ nav {
     height: 100%;
     transition-delay: 0s;
 }
-
 body input:checked ~ nav > ul > li {
     opacity: 1;
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
+/*BOOKING BUTTON*/
 .bookingbutton {
     width: 100px;
     padding: 1px;
@@ -227,10 +186,10 @@ body input:checked ~ nav > ul > li {
     cursor: pointer;
 }
 
+/*FOOTER*/
 #footwrapper {
     position: relative;
 }
-
 .foot {
     text-align: center;
     position: absolute;
@@ -238,39 +197,33 @@ body input:checked ~ nav > ul > li {
     width: 100%;
 }
 
-
 /*Mia and Malu subpage*/
-
 .mmcontainer {
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
-
 .malue {
     float: left;
     position: relative;
     width: 50vw;
     height: 100vh;
 }
-
 .mia {
     float: left;
     width: 50vw;
     height: 100vh;
 }
 
-
-/* LAPTOP */
-
+/* L A P T O P  V I E W */
 @media (min-width: 600px) {
-
-.book{width: 30%}
+    .book {
+        width: 30%
+    }
 
     .homebut {
         width: 10%;
     }
-
 
     .logo {
         width: 30%;
@@ -278,14 +231,9 @@ body input:checked ~ nav > ul > li {
         margin-left: auto;
         margin-right: auto;
     }
+
     .homebut {
         width: 10%;
-    }
-    .logo {
-        width: 30%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .logo {
@@ -296,6 +244,163 @@ body input:checked ~ nav > ul > li {
         align-items: center;
     }
 
+    h1 {
+        font-size: 1em;
+        color: white;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "vid" "abt";
+        grid-gap: 2em;
+        text-align: center;
+    }
+
+    .video {
+        grid-area: vid;
+    }
+
+    .butik {
+        grid-area: abt;
+        padding-left: 13em;
+        padding-right: 13em;
+        color: white;
+    }
+
+    .foot {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .friends {
+        width: 20%;
+    }
+
+    .foot {
+        grid-template-columns: auto auto auto auto;
+    }
+
+
+ /*BURGER menu on DESKTOP*/
+/*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
+    span {
+        text-transform: none;
+        opacity: .5;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    #burger {
+        display: none;
+    }
+
+    label {
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        height: 20px;
+        width: 15px;
+        z-index: 5;
+    }
+
+    label span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        background: #020304;
+        transition: .5s;
+    }
+
+    label span:first-child {
+        top: 3px;
+    }
+
+    label span:last-child {
+        top: 16px;
+    }
+
+    body label:hover {
+        cursor: pointer;
+    }
+
+    body input:checked + label span {
+        opacity: 0;
+        top: 50%;
+    }
+
+    body input:checked + label span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+    }
+
+    body input:checked + label span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+    }
+
+    nav {
+        background: #e2dc26;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: .5s;
+        transition-delay: .5s;
+        overflow: hidden;
+         display: flex;
+    text-align: left;
+
+    }
+    /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
+
+    nav > ul {
+            position: fixed;
+    text-align: left;
+    top: 60px;
+    display: inline-block;
+    }
+
+    nav > ul > li {
+        opacity: 0;
+        transition: 0s;
+        transition-delay: 0s;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    nav > ul > li > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #020304;
+        font-weight: 700;
+        font-family: sans-serif;
+        float: left;
+        padding: 30px;
+    }
+
+    body input:checked ~ nav {
+        height: 100%;
+        transition-delay: 0s;
+    }
+
+    body input:checked ~ nav > ul > li {
+        opacity: 1;
+        transition-delay: 0s;
+    }
+
+
 
     h1 {
         font-size: 1em;
@@ -310,10 +415,10 @@ body input:checked ~ nav > ul > li {
         text-align: center;
     }
 
-
     .video {
         grid-area: vid;
     }
+
     .butik {
         grid-area: abt;
         padding-left: 13em;
@@ -340,240 +445,6 @@ body input:checked ~ nav > ul > li {
         grid-template-columns: auto auto auto auto;
         grid-template-areas: /*padding-left: 10em;
        padding-right: 10em;*/
-    }
-
-    ///*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu - little help*///
-    span {
-        text-transform: none;
-        opacity: .5;
-        font-weight: 300;
-        font-size: 12px;
-    }
-    #burger {
-        display: none;
-    }
-    label {
-        position: fixed;
-        top: 40px;
-        right: 40px;
-        height: 20px;
-        width: 15px;
-        z-index: 5;
-    }
-    label span {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        top: 50%;
-        margin-top: -1px;
-        left: 0;
-        display: block;
-        background: black;
-        transition: .5s;
-    }
-    label span:first-child {
-        top: 3px;
-    }
-    label span:last-child {
-        top: 16px;
-    }
-    body label:hover {
-        cursor: pointer;
-    }
-
-    /*our burger menu button movement 'animation;*/
-    body input:checked + label span {
-        opacity: 0;
-        top: 50%;
-    }
-    body input:checked + label span:first-child {
-        opacity: 1;
-        transform: rotate(405deg);
-    }
-    body input:checked + label span:last-child {
-        opacity: 1;
-        transform: rotate(-405deg);
-    }
-    nav {
-        background: #f2dd1c;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        /* z-index: 3;*/
-        transition: .5s;
-        transition-delay: .5s;
-        overflow: hidden;
-    }
-
-    /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-    nav > ul {
-        text-align: center;
-        position: absolute;
-        top: 35%;
-        left: 20%;
-        right: 20%;
-    }
-    nav > ul > li {
-        opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
-    }
-    li {
-        list-style-type: none;
-    }
-    nav > ul > li > a {
-        text-decoration: none;
-        text-transform: uppercase;
-
-        color: black;
-        font-weight: 700;
-        font-family: sans-serif;
-        float: left;
-        padding: 30px;
-    }
-    body input:checked ~ nav {
-        height: 100%;
-        transition-delay: 0s;
-    }
-    body input:checked ~ nav > ul > li {
-        opacity: 1;
-        transition-delay: .5s;
-    }
-
-    h1 {
-        font-size: 1em;
-        color: white;
-    }
-    .about {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "vid" "abt";
-        grid-gap: 2em;
-        text-align: center;
-    }
-    .video {
-        grid-area: vid;
-    }
-    .butik {
-        grid-area: abt;
-        padding-left: 13em;
-        padding-right: 13em;
-        color: white;
-    }
-    .foot {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-    }
-    h2 {
-        color: white;
-        text-align: center;
-    }
-    .friends {
-        width: 20%;
-    }
-    .foot {
-        grid-template-columns: auto auto auto auto;
-        grid-template-areas: /*padding-left: 10em;
-       padding-right: 10em;*/
-    }
-    ///*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu - little help*///
-    span {
-        text-transform: none;
-        opacity: .5;
-        font-weight: 300;
-        font-size: 12px;
-    }
-    #burger {
-        display: none;
-    }
-    label {
-        position: fixed;
-        top: 40px;
-        right: 40px;
-        height: 20px;
-        width: 15px;
-        z-index: 5;
-    }
-    label span {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        top: 50%;
-        margin-top: -1px;
-        left: 0;
-        display: block;
-        background: black;
-        transition: .5s;
-    }
-    label span:first-child {
-        top: 3px;
-    }
-    label span:last-child {
-        top: 16px;
-    }
-    body label:hover {
-        cursor: pointer;
-    }
-    /*our burger menu button movement 'animation;*/
-    body input:checked + label span {
-        opacity: 0;
-        top: 50%;
-    }
-    body input:checked + label span:first-child {
-        opacity: 1;
-        transform: rotate(405deg);
-    }
-    body input:checked + label span:last-child {
-        opacity: 1;
-        transform: rotate(-405deg);
-    }
-    nav {
-        background: #f2dd1c;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /* z-index: 3;*/
-        transition: .5s;
-        transition-delay: .5s;
-        overflow: hidden;
-        display:flex;
-    }
-    /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-    nav > ul {
-        text-align: center;
-        position: absolute;
-        top: 35%;
-        left: 20%;
-        right: 20%;
-    }
-    nav > ul > li {
-        opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
-    }
-    li {
-        list-style-type: none;
-    }
-    nav > ul > li > a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-        font-weight: 700;
-        font-family: sans-serif;
-        float: left;
-        padding: 30px;
-    }
-    body input:checked ~ nav {
-        height: 100%;
-        transition-delay: 0s;
-    }
-    body input:checked ~ nav > ul > li {
-        opacity: 1;
-        transition-delay: .5s;
     }
 
 }
