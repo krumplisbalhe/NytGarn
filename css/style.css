@@ -217,7 +217,10 @@ body input:checked ~ nav > ul > li {
     width: 50vw;
     height: 100vh;
 }
-
+.description{
+    color: white;
+    font-size: 0.9em;
+}
 /* L A P T O P  V I E W */
 @media (min-width: 600px) {
     .book {
@@ -375,7 +378,7 @@ body input:checked ~ nav > ul > li {
     }
 
     nav {
-        background: #e2dc26;
+        background: #f4afc2;
         position: fixed;
         top: 0;
         left: 0;
