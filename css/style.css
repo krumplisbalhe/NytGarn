@@ -7,7 +7,7 @@ html{
 body {
     background-color: #2394ea;
     font-family: "Arial";
-    margin: 0 0 100px;
+    margin: 0 0 50px;
     padding: 25px;
 }
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
@@ -187,6 +187,11 @@ body input:checked ~ nav > ul > li {
     transition-delay: 0s;
 }
 
+body input:checked ~ nav > ul {
+    display:grid;
+    flex-direction: column;
+}
+
 /*BOOKING BUTTON*/
 .bookingbutton {
     width: 100px;
@@ -201,13 +206,14 @@ body input:checked ~ nav > ul > li {
   position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 50px;
     width: 100%;
     overflow:hidden;
     text-align: center;
+    z-index: -1;
 }
 
-/*Mia and Malu subpage*/
+/*Mia and Malu subpage on MOBILE*/
 .instaicon{width: 8%;}
 .mmcontainer {
     padding: 0;
@@ -226,13 +232,14 @@ body input:checked ~ nav > ul > li {
     height: 100vh;
 }
 
-/*Join us subpage*/
+/*Join us subpage on MOBILE*/
 .widgetholder{
     max-width: 800px;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
+    z-index: -1;
 }
 
 /* L A P T O P  V I E W */
@@ -246,29 +253,6 @@ body input:checked ~ nav > ul > li {
     }
 
 
-
-/*Mia and Malu subpage*/
-
-/* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
-.instaicon{width: 8%;}
-
-.miamaluecontent{
-	  -moz-column-count: 2;
-	  -moz-column-gap: 10px;
-	  -moz-column-rule: none;
-	  -webkit-column-count: 2;
-	  -webkit-column-gap: 10px;
-	  -webkit-column-rule: none;
-	column-count: 2;
-	column-gap: 100px;
-	column-rule: none;
-    padding-bottom: 40px;
-       padding-right: 40px;
-       padding-left: 40px;
-    text-align: center
-	}
-
-
     .logo {
         width: 30%;
         display: block;
@@ -276,8 +260,6 @@ body input:checked ~ nav > ul > li {
         margin-right: auto;
     }
 
-
-    }
 
     .logo {
         width: 30%;
@@ -403,9 +385,9 @@ body input:checked ~ nav > ul > li {
     position: fixed;
     margin-top: 60px;
     text-align: left;
-    top: 100px;
+    top: 120px;
     display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
 
@@ -428,7 +410,7 @@ body input:checked ~ nav > ul > li {
         font-weight: 700;
         font-family: sans-serif;
         float: left;
-        padding: 30px;
+        padding: 50px;
         display: none;
     }
 
@@ -438,14 +420,23 @@ body input:checked ~ nav > ul > li {
     }
 
 body input:checked ~ nav > ul > li > a {
-        display: block;
+        display: flex;
     }
 
     body input:checked ~ nav > ul > li {
         opacity: 1;
         transition-delay: 0s;
+        display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
     }
 
+     body input:checked ~ nav > ul {
+         display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+
+    }
 
 
     h1 {
@@ -480,4 +471,24 @@ body input:checked ~ nav > ul > li > a {
     .friends {
         width: 20%;
     }
+    /*Mia and Malu subpage on DESKTOP*/
+
+/* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
+.instaicon{width: 8%;}
+
+.miamaluecontent{
+	  -moz-column-count: 2;
+	  -moz-column-gap: 10px;
+	  -moz-column-rule: none;
+	  -webkit-column-count: 2;
+	  -webkit-column-gap: 10px;
+	  -webkit-column-rule: none;
+	column-count: 2;
+	column-gap: 100px;
+	column-rule: none;
+    padding-bottom: 40px;
+       padding-right: 40px;
+       padding-left: 40px;
+    text-align: center
+	}
 }
