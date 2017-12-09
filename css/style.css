@@ -242,6 +242,14 @@ body input:checked ~ nav > ul {
     z-index: -1;
 }
 
+/*Contact page on MOBILE*/
+.contactwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* L A P T O P  V I E W */
 @media (min-width: 600px) {
     .book {
@@ -491,4 +499,12 @@ body input:checked ~ nav > ul > li > a {
        padding-left: 40px;
     text-align: center
 	}
+
+    /*Contact page on DESKTOP*/
+.contactwrapper{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 }
