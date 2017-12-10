@@ -78,10 +78,14 @@ svg {
     margin-right: auto;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1em;
     color: white;
     border: 1px white;
 }
+/*What is garn subpage*/
+h2{color:white;}
+p{color:white;}
+.video{width="200" height="100"}
 
 /*BURGER MENU MOBILE*/
 /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
@@ -136,26 +140,34 @@ body input:checked + label span:last-child {
     opacity: 1;
     transform: rotate(-405deg);
 }
+.pictext{;
+    text-align: center;;}
+ .cmt{width: 32%;
+     padding: 5px;
+
+}
+.cmt:hover{opacity: 50%;}
 nav {
     background: #e2dc26;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    transition: .5s;
+    transition: .5s;+
     transition-delay: .5s;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    text-align: left;
+
 }
 
 /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-nav > ul {
+ul {padding-left:0px;
     position: fixed;
-    text-align: left;
-    top: 60px;
-    display: inline-block;
+    margin:0px;
+    text-align:left;
+    top: 50px;
+;
 }
 nav > ul > li {
     opacity: 0;
@@ -169,6 +181,8 @@ a {
     float: none;
     padding: 0;
     display: block;
+    text-decoration: none;
+    color: black;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -187,9 +201,7 @@ body input:checked ~ nav > ul > li {
     transition-delay: 0s;
 }
 
-body input:checked ~ nav > ul {
-    display:grid;
-    flex-direction: column;
+
 }
 
 /*BOOKING BUTTON*/
@@ -232,6 +244,12 @@ body input:checked ~ nav > ul {
     height: 100vh;
 }
 
+.description{
+    color: white;
+    font-size: 0.9em;
+}
+
+
 /*Join us subpage on MOBILE*/
 .widgetholder{
     max-width: 800px;
@@ -247,8 +265,9 @@ body input:checked ~ nav > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
+}
+h3{color:white;}
 
 /* L A P T O P  V I E W */
 @media (min-width: 600px) {
@@ -259,7 +278,6 @@ body input:checked ~ nav > ul {
     .homebut {
         width: 12%;
     }
-
 
     .logo {
         width: 30%;
@@ -292,6 +310,7 @@ body input:checked ~ nav > ul {
 
     .video {
         grid-area: vid;
+
     }
 
     .butik {
@@ -307,6 +326,7 @@ body input:checked ~ nav > ul {
         color: white;
         text-align: center;
     }
+
 
     .friends {
         width: 20%;
@@ -372,9 +392,18 @@ body input:checked ~ nav > ul {
         opacity: 1;
         transform: rotate(-405deg);
     }
-
+    .pictext{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: sans-serif;
+        float: left;
+        padding:30px;
+    }
+    .cmt{width: 60%;
+        padding-bottom: 10px;
+    }
     nav {
-        background: #e2dc26;
+        background: #f4afc2;
         position: fixed;
         top: 0;
         left: 0;
@@ -389,11 +418,12 @@ body input:checked ~ nav > ul {
     }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
 
-    nav > ul {
+    ul {
     position: fixed;
-    margin-top: 60px;
     text-align: left;
     top: 120px;
+        margin-left: 2%;
+        margin-right: 2%;
     display: flex;
         flex-direction: column;
         flex-wrap: wrap;
