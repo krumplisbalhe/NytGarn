@@ -38,9 +38,32 @@ function showPrices(prices) {
         pricelist.appendChild(clone);
     })
 }
+
+function getColorCut() {
+    fetch("http://zawropati.com/GARN/wp-json/wp/v2/prices?categories=2&_embed").then(res => res.json()).then(showColorCut)
+}
+
+function showColorCut(colorcut) {
+    let colorcutlist = document.querySelector("#pricelistColorCut");
+    let colorcuttemplate = document.querySelector("#ColorCutTemplate").content;
+    colorcut.forEach(function (aColorCut) {
+        console.log(aColorCut)
+        let clone = colorcuttemplate.cloneNode(true);
+        let cctitle = clone.querySelector(".CCtitle");
+        cctitle.textContent = aColorCut.title.rendered;
+        let ccprice = clone.querySelector(".CCprice");
+        ccprice.textContent = aColorCut.acf.price;
+        colorcutlist.appendChild(clone);
+    })
+}
+
+
 if(document.querySelector("#hairdressersTemplate")){
     getData();
 }
 if(document.querySelector("#pricesTemplate")){
  getPrices();
+}
+if(document.querySelector("#pricelistColorCut")){
+ getColorCut();
 }
