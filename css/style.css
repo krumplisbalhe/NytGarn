@@ -146,7 +146,7 @@ body input:checked + label span:last-child {
      padding: 5px;
 
 }
-.cmt:hover{opacity: 50%;}
+
 nav {
     background: #e2dc26;
     position: fixed;
