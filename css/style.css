@@ -78,10 +78,14 @@ svg {
     margin-right: auto;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1em;
     color: white;
     border: 1px white;
 }
+/*What is garn subpage*/
+h2{color:white;}
+p{color:white;}
+.video{width="200" height="100"}
 
 /*BURGER MENU MOBILE*/
 /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
@@ -253,7 +257,9 @@ body input:checked ~ nav > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+h3{color:white;}
 
 /* L A P T O P  V I E W */
 @media (min-width: 600px) {
@@ -297,6 +303,7 @@ body input:checked ~ nav > ul {
 
     .video {
         grid-area: vid;
+
     }
 
     .butik {
@@ -312,6 +319,7 @@ body input:checked ~ nav > ul {
         color: white;
         text-align: center;
     }
+
 
     .friends {
         width: 20%;
