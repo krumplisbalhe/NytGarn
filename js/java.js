@@ -74,29 +74,29 @@ function showHair(colorcut) {
 
 function toggleThatPriceX() {
     var x = document.getElementById("toggle1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 
 }
 
 function toggleThatPriceY() {
     var y = document.getElementById("toggle2");
-    if (y.style.display === "none") {
-        y.style.display = "block";
-    } else {
+    if (y.style.display === "block") {
         y.style.display = "none";
+    } else {
+        y.style.display = "block";
     }
 }
 
 function toggleThatPriceZ() {
     var z = document.getElementById("toggle3");
-    if (z.style.display === "none") {
-        z.style.display = "block";
-    } else {
+    if (z.style.display === "block") {
         z.style.display = "none";
+    } else {
+        z.style.display = "block";
     }
 }
 
