@@ -1,3 +1,4 @@
+
 function getData() {
     fetch("http://zawropati.com/GARN/wp-json/wp/v2/hairdressers?_embed").then(res => res.json()).then(showHairdressers);
 }
@@ -71,7 +72,19 @@ function showHair(colorcut) {
     })
 }
 
+var button = document.getElementsByClassName('button');
 
+button.onclick = function(){
+    var fakebut = document.getElementsById("cut");
+    if(fakebut.style.display == "block") {
+
+        fakebut.style.display = "none";
+
+    }  else {
+        fakebut.style.display = "block";
+    }
+
+}
 if (document.querySelector("#hairdressersTemplate")) {
     getData();
 }
@@ -81,3 +94,4 @@ if (document.querySelector("#pricesTemplate")) {
 if (document.querySelector("#pricelistColorCut")) {
     getColorCut();
 }
+
