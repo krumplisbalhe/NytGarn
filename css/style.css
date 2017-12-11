@@ -1,5 +1,6 @@
 /* M O B I L E  V I E W*/
-html{
+
+html {
     position: relative;
     min-height: 100%;
 }
@@ -10,10 +11,12 @@ body {
     margin: 0 0 50px;
     padding: 25px;
 }
+
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
+
 .svgcontainer {
     margin: auto;
-    padding-top:150px;
+    padding-top: 150px;
 }
 
 svg {
@@ -35,6 +38,7 @@ svg {
         stroke-dashoffset: 0;
     }
 }
+
 .homebut {
     display: block;
     ;
@@ -43,7 +47,9 @@ svg {
     ;
     width: 30%;
 }
+
 /*Footer icons*/
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -54,12 +60,15 @@ svg {
     text-decoration: none;
     grid-template-areas: fb;
 }
+
 .fa:hover {
     opacity: 0.7;
 }
+
 .fa-facebook {
     color: white;
 }
+
 .fa-instagram {
     color: white;
 }
@@ -70,6 +79,7 @@ svg {
     width: 40%;
     padding-top: 10px;
 }
+
 .logo {
     width: 70%;
     display: block;
@@ -77,27 +87,42 @@ svg {
     margin-left: auto;
     margin-right: auto;
 }
+
 h1 {
     font-size: 1em;
     color: white;
     border: 1px white;
 }
+
 /*What is garn subpage*/
-h2{color:white;}
-p{color:white;}
-.video{width="200" height="100"}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.video {
+    width="200" height="100"
+}
 
 /*BURGER MENU MOBILE*/
+
 /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
+
 span {
     text-transform: none;
     opacity: .5;
     font-weight: 300;
     font-size: 12px;
 }
+
 #burger {
     display: none;
 }
+
 label {
     position: fixed;
     top: 40px;
@@ -106,6 +131,7 @@ label {
     width: 15px;
     z-index: 5;
 }
+
 label span {
     position: absolute;
     width: 100%;
@@ -117,44 +143,56 @@ label span {
     background: #020304;
     transition: .5s;
 }
+
 label span:first-child {
     top: 3px;
 }
+
 label span:last-child {
     top: 16px;
 }
+
 body label:hover {
     cursor: pointer;
 }
 
 /* burger button movement 'animation' on MOBILE */
+
 body input:checked + label span {
     opacity: 0;
     top: 50%;
 }
+
 body input:checked + label span:first-child {
     opacity: 1;
     transform: rotate(405deg);
 }
+
 body input:checked + label span:last-child {
     opacity: 1;
     transform: rotate(-405deg);
 }
-.pictext{;
-    text-align: center;;}
- .cmt{width: 32%;
-     padding: 5px;
+
+.pictext {
+    ;
+    text-align: center;
+    ;
+}
+
+.cmt {
+    width: 32%;
+    padding: 5px;
 
 }
-.cmt:hover{opacity: 50%;}
+
 nav {
     background: #e2dc26;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    transition: .5s;+
-    transition-delay: .5s;
+    transition: .5s;
+    + transition-delay: .5s;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -162,21 +200,26 @@ nav {
 }
 
 /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-ul {padding-left:0px;
+
+ul {
+    padding-left: 0px;
     position: fixed;
-    margin:0px;
-    text-align:left;
+    margin: 0px;
+    text-align: left;
     top: 50px;
-;
+    ;
 }
+
 nav > ul > li {
     opacity: 0;
     transition: 0s;
     transition-delay: 0s;
 }
+
 li {
     list-style-type: none;
 }
+
 a {
     float: none;
     padding: 0;
@@ -184,6 +227,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 nav > ul > li > a {
     text-decoration: none;
     text-transform: uppercase;
@@ -192,10 +236,12 @@ nav > ul > li > a {
     font-family: sans-serif;
     line-height: 400%;
 }
+
 body input:checked ~ nav {
     height: 100%;
     transition-delay: 0s;
 }
+
 body input:checked ~ nav > ul > li {
     opacity: 1;
     transition-delay: 0s;
@@ -205,6 +251,7 @@ body input:checked ~ nav > ul > li {
 }
 
 /*BOOKING BUTTON*/
+
 .bookingbutton {
     width: 100px;
     padding: 1px;
@@ -215,43 +262,50 @@ body input:checked ~ nav > ul > li {
 /*FOOTER*/
 
 .foot {
-  position: absolute;
+    position: absolute;
     left: 0;
     bottom: 0;
     height: 50px;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     text-align: center;
     z-index: -1;
 }
 
 /*Mia and Malu subpage on MOBILE*/
-.instaicon{width: 8%;}
+
+.instaicon {
+    width: 8%;
+}
+
 .mmcontainer {
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
+
 .malue {
     float: left;
     position: relative;
     width: 50vw;
     height: 100vh;
 }
+
 .mia {
     float: left;
     width: 50vw;
     height: 100vh;
 }
 
-.description{
+.description {
     color: white;
     font-size: 0.9em;
 }
 
 
 /*Join us subpage on MOBILE*/
-.widgetholder{
+
+.widgetholder {
     max-width: 800px;
     position: absolute;
     left: 0;
@@ -261,15 +315,20 @@ body input:checked ~ nav > ul > li {
 }
 
 /*Contact page on MOBILE*/
-.contactwrapper{
+
+.contactwrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-h3{color:white;}
+
+h3 {
+    color: white;
+}
 
 /* L A P T O P  V I E W */
+
 @media (min-width: 600px) {
     .book {
         width: 30%
@@ -333,8 +392,8 @@ h3{color:white;}
     }
 
 
- /*BURGER menu on DESKTOP*/
-/*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
+    /*BURGER menu on DESKTOP*/
+    /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
     span {
         text-transform: none;
         opacity: .5;
@@ -392,14 +451,15 @@ h3{color:white;}
         opacity: 1;
         transform: rotate(-405deg);
     }
-    .pictext{
+    .pictext {
         text-transform: uppercase;
         font-weight: 700;
         font-family: sans-serif;
         float: left;
-        padding:30px;
+        padding: 30px;
     }
-    .cmt{width: 60%;
+    .cmt {
+        width: 60%;
         padding-bottom: 10px;
     }
     nav {
@@ -411,20 +471,19 @@ h3{color:white;}
         transition: .5s;
         transition-delay: .5s;
         overflow: hidden;
-         display: flex;
-    text-align: left;
+        display: flex;
+        text-align: left;
         flex-direction: row;
 
     }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-
     ul {
-    position: fixed;
-    text-align: left;
-    top: 120px;
+        position: fixed;
+        text-align: left;
+        top: 120px;
         margin-left: 2%;
         margin-right: 2%;
-    display: flex;
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -457,7 +516,7 @@ h3{color:white;}
         transition-delay: 0s;
     }
 
-body input:checked ~ nav > ul > li > a {
+    body input:checked ~ nav > ul > li > a {
         display: flex;
     }
 
@@ -465,13 +524,13 @@ body input:checked ~ nav > ul > li > a {
         opacity: 1;
         transition-delay: 0s;
         display: inline-block;
-    width: calc(100% / 3);
-    text-align: center;
+        width: calc(100% / 3);
+        text-align: center;
     }
 
-     body input:checked ~ nav > ul {
-         display: flex;
-        flex-direction:row;
+    body input:checked ~ nav > ul {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
 
     }
@@ -510,28 +569,50 @@ body input:checked ~ nav > ul > li > a {
         width: 20%;
     }
     /*Mia and Malu subpage on DESKTOP*/
+    /* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
+    .instaicon {
+        width: 8%;
+    }
 
-/* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
-.instaicon{width: 8%;}
+    .miamaluecontent {
+        -moz-column-count: 2;
+        -moz-column-gap: 10px;
+        -moz-column-rule: none;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        -webkit-column-rule: none;
+        column-count: 2;
+        column-gap: 100px;
+        column-rule: none;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        text-align: center
+    }
+    /*Prices on desktop*/
+    .colpric {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+    }
+    .hairprice {
+        font-size: 1em;
+    }
+}
+.colprices{
+    padding-top: 40px;
+color: white;}
+}
+.colprices:after {
+    content: "";
+    display: table;
+    clear: both;
 
-.miamaluecontent{
-	  -moz-column-count: 2;
-	  -moz-column-gap: 10px;
-	  -moz-column-rule: none;
-	  -webkit-column-count: 2;
-	  -webkit-column-gap: 10px;
-	  -webkit-column-rule: none;
-	column-count: 2;
-	column-gap: 100px;
-	column-rule: none;
-    padding-bottom: 40px;
-       padding-right: 40px;
-       padding-left: 40px;
-    text-align: center
-	}
+}
 
-    /*Contact page on DESKTOP*/
-.contactwrapper{
+/*Contact page on DESKTOP*/
+
+.contactwrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
