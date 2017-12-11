@@ -6,7 +6,8 @@ html {
 }
 
 body {
-    background-color: #2394ea;
+    background-color:
+#f3d102;
     font-family: "Arial";
     margin: 0 0 50px;
     padding: 25px;
@@ -273,7 +274,7 @@ body input:checked ~ nav > ul > li {
 }
 
 /*Mia and Malu subpage on MOBILE*/
-
+.miamaluebody{background-color: #187552;}
 .instaicon {
     width: 8%;
 }
@@ -594,11 +595,15 @@ h3 {
         float: left;
         width: 33.33%;
         text-align: center;
+        display: block;
     }
     .hairprice {
         font-size: 1em;
     }
+    .title1{border: 1px white solid;}
 }
+.firstcolumn{align-items: center;}
+
 .colprices{
     padding-top: 40px;
 color: white;}
