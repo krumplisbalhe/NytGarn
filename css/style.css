@@ -328,6 +328,22 @@ h3 {
     color: white;
 }
 
+/*Prices page on MOBILE*/
+#toggle1, #toggle2, #toggle3{
+    display: none;
+}
+.buttonforhair{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 /* L A P T O P  V I E W */
 
 @media (min-width: 600px) {
@@ -601,13 +617,13 @@ h3 {
         font-size: 1em;
     }
     .title1{border: 1px white solid;}
-}
+
 .firstcolumn{align-items: center;}
 
 .colprices{
     padding-top: 40px;
 color: white;}
-}
+
 .colprices:after {
     content: "";
     display: table;
@@ -622,5 +638,8 @@ color: white;}
     align-items: center;
     justify-content: space-around;
 }
+
+
+
 
 }

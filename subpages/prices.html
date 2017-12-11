@@ -1,74 +1,66 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NytGarn</title>
-     <link rel="stylesheet" type="text/css" href="../css/style.css"s>   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" s>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
+
 <body>
-<header>   <input id="burger" type="checkbox" />
-
-<label for="burger">
-    <span></span>
-    <span></span>
-    <span></span>
-</label>
-
-   <nav>
-  <ul>
-   <li> <a href="whatisgarn.html">What is Garn</a></li>
-   <li> <a href="MiaMalue.html">About Mia and Malue</a></li>
-   <li> <a href="prices.html">Prices</a></li>
-   <li> <a href="https://garn1879.bestilling.nu/">Booking</a></li>
-   <li> <a href="joinus.html">Join us</a></li>
-<li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-</header>
-
-
+    <header>
+        <input id="burger" type="checkbox" />
+        <label for="burger"> <span></span> <span></span> <span></span> </label>
+        <nav>
+            <ul>
+                <li> <a href="whatisgarn.html">What is Garn</a></li>
+                <li> <a href="MiaMalue.html">About Mia and Malue</a></li>
+                <li> <a href="prices.html">Prices</a></li>
+                <li> <a href="https://garn1879.bestilling.nu/">Booking</a></li>
+                <li> <a href="joinus.html">Join us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>B O O K I N G</h1>
-  <a href="../index.html"><img class="homebut" src="../garn..png"></a>
-<div class="colprices">
+    <a href="../index.html"><img class="homebut" src="../garn..png"></a>
+    <div class="colprices">
+        <div class="colpric" id="First">
+            <button onclick="toggleThatPriceX()" class="buttonforhair">Cut</button>
+            <div id="toggle1">
+                <section id="pricelistCut"></section>
+            </div>
+        </div>
+        <div class="colpric" id="Second">
+            <button onclick="toggleThatPriceY()" class="buttonforhair">Color excluding cut</button>
+            <div id="toggle2">
+                <section id="pricelistColor">
+                </section>
+            </div>
+        </div>
+        <div class="colpric" id="Thrid">
+            <button onclick="toggleThatPriceZ()" class="buttonforhair">Color and cut</button>
+            <div id="toggle3">
+<section id="pricelistColorCut"></section>
+        </div>
+        </div>
 
 
-   <div class="colpric" id="First">
-
-       <button class="button">Cut</button>
-      <div id="cut">
-       <section id="pricelistCut"></section>
+        <section id="pricelistCut"></section>
+        <section id="pricelistColorCut"></section>
+        <section id="pricelistColor"></section>
+        <template id="HairTemplate">
+            <article class="hair">
+                <h1 class="hairtitle"></h1>
+                <h2 class="hairprice"><span></span>DKK</h2> </article>
+        </template>
     </div>
+    <div class="foot">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
     </div>
-
-    <div class="colpric" id="Second">   <section id="pricelistColor"><div class="title2">Color excluding cut</div></section></div>
-
-  <div class="colpric" id="Thrid" >  <section id="pricelistColorCut">Color and Cut</section></div>
-
-
-    <section id="pricelistCut"></section>
-   <section id="pricelistColorCut"></section>
-   <section id="pricelistColor"></section>
-
-    <template id="HairTemplate">
-    <article class="hair">
-       <h1 class="hairtitle"></h1>
-        <h2 class="hairprice"><span></span>DKK</h2>
-        </article>
-    </template>
-</div>
-
-
-<div class="foot">
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-instagram"></a>
-    </div>
-
-
     <script src="../js/java.js"></script>
 </body>
-
-
-
 
 </html>
