@@ -15,7 +15,7 @@ function showHairdressers(data) {
         let image = clone.querySelector(".image");
         image.setAttribute('src', theHairdresser._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url);
         let instagram = clone.querySelector(".instagram");
-        instagram.setAttribute('href',theHairdresser.acf.instagram);
+        instagram.setAttribute('href', theHairdresser.acf.instagram);
 
         list.appendChild(clone);
     })
@@ -50,18 +50,18 @@ function showHair(colorcut) {
         console.log(aColorCut)
         let clone = colorcuttemplate.cloneNode(true);
         let cctitle = clone.querySelector(".hairtitle");
-        cctitle.textContent = aColorCut.title.rendered;
+        cctitle.innerHTML = aColorCut.title.rendered;
         let ccprice = clone.querySelector(".hairprice");
         ccprice.textContent = aColorCut.acf.price;
 
         let parent;
-        if(aColorCut.categories[0]==5){
+        if (aColorCut.categories[0] == 2) {
             parent = document.querySelector("#pricelistColorCut");
 
-        } else if(aColorCut.categories[0]==3){
+        } else if (aColorCut.categories[0] == 3) {
             parent = document.querySelector("#pricelistCut");
 
-        } else if(aColorCut.categories[0]==2){
+        } else if (aColorCut.categories[0] == 5) {
             parent = document.querySelector("#pricelistColor");
 
         }
@@ -72,12 +72,12 @@ function showHair(colorcut) {
 }
 
 
-if(document.querySelector("#hairdressersTemplate")){
+if (document.querySelector("#hairdressersTemplate")) {
     getData();
 }
-if(document.querySelector("#pricesTemplate")){
- getPrices();
+if (document.querySelector("#pricesTemplate")) {
+    getPrices();
 }
-if(document.querySelector("#pricelistColorCut")){
- getColorCut();
+if (document.querySelector("#pricelistColorCut")) {
+    getColorCut();
 }
