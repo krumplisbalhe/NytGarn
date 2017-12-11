@@ -40,20 +40,34 @@ function showPrices(prices) {
 }
 
 function getColorCut() {
-    fetch("http://zawropati.com/GARN/wp-json/wp/v2/prices?categories=2&_embed").then(res => res.json()).then(showColorCut)
+    fetch("http://zawropati.com/GARN/wp-json/wp/v2/prices?_embed&per_page=100").then(res => res.json()).then(showHair)
 }
 
-function showColorCut(colorcut) {
-    let colorcutlist = document.querySelector("#pricelistColorCut");
-    let colorcuttemplate = document.querySelector("#ColorCutTemplate").content;
+function showHair(colorcut) {
+
+    let colorcuttemplate = document.querySelector("#HairTemplate").content;
     colorcut.forEach(function (aColorCut) {
         console.log(aColorCut)
         let clone = colorcuttemplate.cloneNode(true);
-        let cctitle = clone.querySelector(".CCtitle");
+        let cctitle = clone.querySelector(".hairtitle");
         cctitle.textContent = aColorCut.title.rendered;
-        let ccprice = clone.querySelector(".CCprice");
+        let ccprice = clone.querySelector(".hairprice");
         ccprice.textContent = aColorCut.acf.price;
-        colorcutlist.appendChild(clone);
+
+        let parent;
+        if(aColorCut.categories[0]==5){
+            parent = document.querySelector("#pricelistColorCut");
+
+        } else if(aColorCut.categories[0]==3){
+            parent = document.querySelector("#pricelistCut");
+
+        } else if(aColorCut.categories[0]==2){
+            parent = document.querySelector("#pricelistColor");
+
+        }
+        parent.appendChild(clone);
+
+
     })
 }
 
