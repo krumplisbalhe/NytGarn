@@ -72,19 +72,34 @@ function showHair(colorcut) {
     })
 }
 
-var button = document.getElementsByClassName('button');
-
-button.onclick = function(){
-    var fakebut = document.getElementsById("cut");
-    if(fakebut.style.display == "block") {
-
-        fakebut.style.display = "none";
-
-    }  else {
-        fakebut.style.display = "block";
+function toggleThatPriceX() {
+    var x = document.getElementById("toggle1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
 
 }
+
+function toggleThatPriceY() {
+    var y = document.getElementById("toggle2");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+
+function toggleThatPriceZ() {
+    var z = document.getElementById("toggle3");
+    if (z.style.display === "none") {
+        z.style.display = "block";
+    } else {
+        z.style.display = "none";
+    }
+}
+
 if (document.querySelector("#hairdressersTemplate")) {
     getData();
 }

@@ -340,6 +340,22 @@ body input:checked ~ nav > ul > li {
 }
 
 
+/*Prices page on MOBILE*/
+#toggle1, #toggle2, #toggle3{
+    display: none;
+}
+.buttonforhair{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 /* L A P T O P  V I E W */
 
 @media (min-width: 600px) {
@@ -597,10 +613,15 @@ body input:checked ~ nav > ul > li {
     .hairprice {
         font-size: 1em;
     }
+
+    .title1{border: 1px white solid;}
+
+.firstcolumn{align-items: center;}
     .title1 {
         border: 1px white solid;
     }
 }
+
 
 .firstcolumn {
     align-items: center;
@@ -608,10 +629,14 @@ body input:checked ~ nav > ul > li {
 
 .colprices {
     padding-top: 40px;
+
+color: white;}
+
     color: white;
 }
 
 }
+
 
 .colprices:after {
     content: "";
@@ -624,8 +649,16 @@ body input:checked ~ nav > ul > li {
 
 .contactwrapper {
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     justify-content: space-around;
 }
+    .contact{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
 
 }
