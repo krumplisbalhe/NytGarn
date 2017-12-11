@@ -1,14 +1,33 @@
 /* M O B I L E  V I E W*/
 
-html {
-    position: relative;
-    min-height: 100%;
+@font-face {
+    font-family: titles;
+    src: url(ClaireHandBold.ttf);
 }
 
-body {
-    background-color:
-#f3d102;
-    font-family: "Arial";
+html {
+    position: relative;
+    min-height: 100%;}
+
+h1,h2,h3 {
+    font-family: titles;
+    letter-spacing: 2px;
+color: white;
+font-size: 1.2em;
+}
+
+p {
+    letter-spacing: 1px;
+    color: white;
+}
+
+/*Black text*/
+
+.bookblack{color: black;
+}
+
+body {background-color: #f3d102;
+    font-family: "Helvetica";
     margin: 0 0 50px;
     padding: 25px;
 }
@@ -89,26 +108,18 @@ svg {
     margin-right: auto;
 }
 
-h1 {
-    font-size: 1em;
-    color: white;
-    border: 1px white;
-}
+
 
 /*What is garn subpage*/
 
-h2 {
-    color: white;
-}
-
-p {
-    color: white;
+.whatisgarnbody {
+    background-color: #d86200;
 }
 
 .video {
     width="200" height="100"
 }
-
+.whatisgarntitle{text-align: center;}
 /*BURGER MENU MOBILE*/
 
 /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
@@ -274,7 +285,11 @@ body input:checked ~ nav > ul > li {
 }
 
 /*Mia and Malu subpage on MOBILE*/
-.miamaluebody{background-color: #187552;}
+
+.miamaluebody {
+    background-color: #187552;
+}
+
 .instaicon {
     width: 8%;
 }
@@ -324,9 +339,6 @@ body input:checked ~ nav > ul > li {
 
 }
 
-h3 {
-    color: white;
-}
 
 /*Prices page on MOBILE*/
 #toggle1, #toggle2, #toggle3{
@@ -369,11 +381,6 @@ h3 {
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-    }
-
-    h1 {
-        font-size: 1em;
-        color: white;
     }
 
     .about {
@@ -552,12 +559,6 @@ h3 {
 
     }
 
-
-    h1 {
-        font-size: 1em;
-        color: white;
-    }
-
     .about {
         display: grid;
         grid-template-columns: 1fr;
@@ -577,10 +578,6 @@ h3 {
         color: white;
     }
 
-    h2 {
-        color: white;
-        text-align: center;
-    }
 
     .friends {
         width: 20%;
@@ -616,13 +613,30 @@ h3 {
     .hairprice {
         font-size: 1em;
     }
+
     .title1{border: 1px white solid;}
 
 .firstcolumn{align-items: center;}
+    .title1 {
+        border: 1px white solid;
+    }
+}
 
-.colprices{
+
+.firstcolumn {
+    align-items: center;
+}
+
+.colprices {
     padding-top: 40px;
+
 color: white;}
+
+    color: white;
+}
+
+}
+
 
 .colprices:after {
     content: "";
