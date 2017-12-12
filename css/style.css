@@ -515,8 +515,8 @@ body input:checked ~ nav > ul > li {
         padding: 30px;
     }
     .cmt {
-        width: 60%;
-        padding-bottom: 10px;
+        width: 40%;
+        padding-bottom: 0px;
     }
     nav {
         background: #f4afc2;
