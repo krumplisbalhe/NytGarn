@@ -399,15 +399,18 @@ body input:checked ~ nav > ul > li {
     display: none;
 }
 .pricesbody{background-color: #0971c4;}
-.buttonforhair {background:
+.buttonforhair {
     cursor: pointer;
+    background-color: white;
+    border: none;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
-.gifcut{width: 60%;}
+
 /* L A P T O P  V I E W */
 
 @media (min-width: 600px) {
@@ -541,10 +544,29 @@ body input:checked ~ nav > ul > li {
     }
     nav {
         background: #f4afc2;
+        position: fixed;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        transition: .5s;
+        transition-delay: .5s;
+        overflow: hidden;
+        display: flex;
+        text-align: left;
+        flex-direction: row;
 
     }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-
+    ul {
+        position: fixed;
+        text-align: left;
+        top: 80px;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
     nav > ul > li {
         opacity: 0;
@@ -565,20 +587,12 @@ body input:checked ~ nav > ul > li {
     body input:checked ~ nav {
         height: 100%;
         transition-delay: 0s;
-    ;
-
+        padding-top: 0px;
     }
-    body input:checked ~ nav > ul {
-position: fixed;
-        text-align: left;
-        top: 80px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;}
 
     body input:checked ~ nav > ul > li > .pictext {
         display: block;
-        text-decoration: none;
+         text-decoration: none;
         text-transform: uppercase;
         color: #020304;
         font-weight: 700;
@@ -675,6 +689,8 @@ position: fixed;
 }
 
 .colprices {
+    padding-top: 40px;
+
     color: white;
 }
 
