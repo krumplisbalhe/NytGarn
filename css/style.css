@@ -526,14 +526,14 @@ body input:checked ~ nav > ul > li {
         padding: 30px;
     }
     .cmt {
-        width: 40%;
+        width: 45%;
         padding-bottom: 0px;
     }
     nav {
         background: #f4afc2;
         position: fixed;
+        align-items: center;
         top: 0;
-        left: 0;
         width: 100%;
         transition: .5s;
         transition-delay: .5s;
@@ -547,7 +547,7 @@ body input:checked ~ nav > ul > li {
     ul {
         position: fixed;
         text-align: left;
-        top: 120px;
+        top: 80px;
         margin-left: 2%;
         margin-right: 2%;
         display: flex;
