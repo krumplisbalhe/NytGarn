@@ -22,8 +22,15 @@ p {
 }
 
 /*Black text*/
-
+.bookindex{display: inline-block;
+color: black;
+background-image:url(/img/buttons.png);
+background-size: contain;
+background-repeat: no-repeat;
+padding: }
 .bookblack{color: black;
+    padding-bottom:
+
 }
 
 body {background-color: #f3d102;
@@ -48,9 +55,9 @@ svg {
 }
 
 .path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 2s linear forwards;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: dash 2.5s linear forwards;
 }
 
 @keyframes dash {
