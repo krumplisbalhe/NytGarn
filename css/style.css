@@ -432,6 +432,16 @@ padding-left: 15px;
     align-self: center;
 position: absolute;}
 
+.hairclip2{
+    float: right;
+    width: 5%;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
 
 /* L A P T O P  V I E W */
 
