@@ -22,16 +22,21 @@ p {
 }
 
 /*Black text*/
-.bookindex{display: inline-block;
+.bookindex{display:inline-block;
 color: black;
-background-image:url(/img/buttons.png);
-background-size: contain;
-background-repeat: no-repeat;
-padding: }
-.bookblack{color: black;
-    padding-bottom:
+margin-right: 0;
 
 }
+.bookbutindex{width:50%;
+padding-right:0px;
+}
+
+.bookindex:hover{ background-image: url(/img/buthover.png);
+background-repeat: no-repeat;
+display: inline-block;
+    padding-right: 3%;
+    background-position: center;
+background-size: contain;}
 
 body {background-color: #f3d102;
     font-family: "Helvetica";
