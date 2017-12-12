@@ -68,11 +68,9 @@ svg {
 
 .homebut {
     display: block;
-    ;
     margin-left: auto;
     margin-right: auto;
-    ;
-    width: 30%;
+    width: 50%;
 }
 
 /*Footer icons*/
@@ -339,6 +337,10 @@ body input:checked ~ nav > ul > li {
 
 /*Contact page on MOBILE*/
 
+.contactbody{
+    background-color: #31363A;
+}
+
 .contactwrapper {
     display: flex;
     flex-direction: column;
@@ -367,11 +369,11 @@ body input:checked ~ nav > ul > li {
 
 @media (min-width: 600px) {
     .book {
-        width: 30%
+        width: 30%;
     }
 
     .homebut {
-        width: 12%;
+        width:20%;
     }
 
     .logo {
@@ -627,8 +629,6 @@ body input:checked ~ nav > ul > li {
     .title1 {
         border: 1px white solid;
     }
-}
-
 
 .firstcolumn {
     align-items: center;
@@ -636,13 +636,9 @@ body input:checked ~ nav > ul > li {
 
 .colprices {
     padding-top: 40px;
-
-color: white;}
-
-    color: white;
+color: white;
 }
 
-}
 
 
 .colprices:after {
@@ -664,8 +660,5 @@ color: white;}
         flex-direction: column;
         align-items: flex-start;
     }
-
-
-
 
 }
