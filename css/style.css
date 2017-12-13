@@ -114,13 +114,13 @@ svg {
 
 .fa {
     padding: 20px;
-    font-size: 30px;
     text-align: center;
     text-decoration: none;
-    width: 20px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
-    grid-template-areas: fb;
+    font-size: 50px;
+
 }
 
 .fa:hover {
@@ -135,7 +135,8 @@ svg {
     color: white;
 }
 
-.blackfb, .blackinst{color: black;}
+.blackfb, .blackinst{color: black;
+}
 
 .friends {
     width: 40%;
@@ -450,9 +451,28 @@ position: absolute;}
         width: 30%
     }
 
+
+    /*header*/
+
+    .headerwrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: space-between;
+        padding-bottom: 100px;
+    }
+
+    .toplogo{
+        position: absolute;
+        left: 35vw;
+        width: 400px;
+    }
+
     .homebut {
         margin: auto;
-        width: 10%;
+        width: 50%;
+        padding-top: 30px;
     }
 
     .logo {
@@ -576,6 +596,7 @@ position: absolute;}
     }
     nav {
         background: #f4afc2;
+        z-index: 2;
 
     }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
