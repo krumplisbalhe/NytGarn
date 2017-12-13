@@ -484,9 +484,6 @@ flex-wrap: nowrap;
 flex-direction: row;
 flex-wrap: nowrap;
     flex-basis: auto;}
-
-
-
 .doodsize{width: 20%;
   filter: contrast(150%);
 }
@@ -538,6 +535,26 @@ width: 50%;
 
 }
 
+    right: 100%;
+    bottom: 60%;}
+
+#lavalamp{width: 12%;}
+
+#disco{position: relative;
+    width: 30%;
+;
+}
+#hairdryer{position: relative;
+    width: 30%;
+    transform: rotate(30deg);
+left: 40%;
+bottom: 20%;}
+
+#woman{position: relative;
+    width: 30%;
+right: 25%;
+bottom: }
+
 
 .rockhand{width: 8%;
 float: left;
@@ -566,7 +583,6 @@ position: absolute;}
     .book {
         width: 30%
     }
-
 
     /*header*/
 
