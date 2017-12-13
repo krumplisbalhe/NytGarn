@@ -58,7 +58,7 @@ body {
     padding: 25px;
 }
 
-/*SVG ANIMATED PICTURE ON MAIN PAGE*/
+/*SVG ANIMATED LOGO PICTURE ON MAIN PAGE*/
 
 .svgcontainer {
     margin: auto;
@@ -423,6 +423,8 @@ position: absolute;
 padding-left: 15px;}
 
 .hairclip{width: 8%;}
+
+
 /* L A P T O P  V I E W */
 
 @media (min-width: 600px) {
@@ -580,16 +582,16 @@ padding-left: 15px;}
     body input:checked ~ nav {
         height: 100%;
         transition-delay: 0s;
-    ;
-
     }
+
     body input:checked ~ nav > ul {
 position: fixed;
         text-align: left;
         top: 80px;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;}
+        flex-wrap: wrap;
+    }
 
     body input:checked ~ nav > ul > li > .pictext {
         display: block;
@@ -682,7 +684,7 @@ position: fixed;
     .title1 {
         border: 1px white solid;
     }
-}
+
 
 
 .firstcolumn {
@@ -691,11 +693,6 @@ position: fixed;
 
 .colprices {
     color: white;
-}
-
-color: white;
-}
-
 }
 
 
