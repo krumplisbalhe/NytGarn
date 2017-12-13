@@ -475,8 +475,19 @@ flex-wrap: nowrap;
 .svgcontainer { flex: 2;
 }
 
-
-
+/*seperate doodles*/
+#scissor1{position: relative;
+    width: 40%;
+transform: rotate(240deg);
+left: 65%;}
+#scissor2{position: relative;
+    width: 80%;
+transform: rotate(170deg);
+    right: 100%;
+    bottom: 60%;
+}
+#lavalamp{width: 10%;}
+#disco{width: 40%;}
 .rockhand{width: 8%;
 float: left;
 position: absolute;
