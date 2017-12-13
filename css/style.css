@@ -40,7 +40,7 @@ a{font-family: titles;
 }
 
 .bookindex:hover {
-    background-image: url(/img/buthover.png);
+    background-image: url(../img/buthover.png);
     background-repeat: no-repeat;
     display: inline-block;
     padding-right: 3%;
@@ -48,7 +48,7 @@ a{font-family: titles;
     background-size: contain;
 }
 .bookindexwhite:hover{
-    background-image: url(/img/white_flash.png);
+    background-image: url(../img/white_flash.png);
     background-repeat: no-repeat;
     display: inline-block;
     padding-right: 3%;
