@@ -485,6 +485,12 @@ flex-wrap: nowrap;
     flex-basis: auto;}
 .doodsize{width: 20%;
   filter: contrast(150%);
+    animation: fadein 5s;
+}
+
+@keyframes fadein{
+    from{opacity:0;}
+    to{opacity: 1;}
 }
 
 .dryer{flex:1;}
@@ -493,6 +499,18 @@ flex-wrap: nowrap;
 }
 
 /*seperate doodles*/
+#pacman{
+    width: 30%;
+    position: relative;
+    bottom: 10%;
+    left:30%;
+    transform: rotate(-10deg);
+}
+#comb{
+     width: 50%;
+    position: relative;
+    transform: rotate(30deg);
+}
 #scissor1{position: relative;
     width: 40%;
 transform: rotate(240deg);
