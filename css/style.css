@@ -447,6 +447,27 @@ body input:checked ~ nav > ul > li > .pictext {
 font-family: "Helvetica";}
 .hairtitle{font-size: 0.8em;}
 .gifcut{width: 60%;}
+.hair{
+    padding-top: 5px;
+    text-align: left;
+}
+
+#priceListColor, #pricelistCut, #pricelistColorCut{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p.hairprice{
+    margin-top: 0;
+}
+
+h1.hairtitle{
+    margin-bottom: 0;
+    font-size:  0.75em;
+}
+
+
+
 
 
 /*DOODLES*/
@@ -739,15 +760,14 @@ position: fixed;
         padding-left: 40px;
         text-align: center
     }
-    /*Prices on desktop*/
+    /*Prices page on desktop*/
     .colpric {
         float: left;
         width: 33.33%;
         text-align: center;
         display: block;
+        padding-bottom: 60px;
     }
-
-
 
     .title1 {
         border: 1px white solid;
