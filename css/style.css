@@ -525,7 +525,7 @@ width: 50%;
 #bubble{
     width: 60%;
     position: relative;
-    bottom: 90%;
+    bottom: 85%;
     transform: rotate(-20deg);
 
 }
