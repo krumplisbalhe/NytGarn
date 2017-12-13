@@ -93,20 +93,8 @@ svg {
 /*Header on MOBILE*/
 .homebut {
     display: block;
-    width: 70%;
-}
-
-.headercontainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.headerbooking .headerlogo .headerburger{
-    margin:0;
-    padding:0;
+    margin: auto;
+    width: 40%;
 }
 
 
@@ -261,7 +249,7 @@ body input:checked + label span:last-child {
 
 
 nav {
-    background: #e2dc26;
+    background: #f4afc2;
     position: fixed;
     top: 0;
     left: 0;
@@ -311,6 +299,10 @@ nav > ul > li > a {
     line-height: 400%;
 }
 
+nav > ul > li > .pictext {
+       display: none;
+    }
+
 body input:checked ~ nav {
     height: 100%;
     transition-delay: 0s;
@@ -320,6 +312,18 @@ body input:checked ~ nav > ul > li {
     opacity: 1;
     transition-delay: 0s;
 }
+
+body input:checked ~ nav > ul > li > .pictext {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #020304;
+        font-weight: 700;
+        font-family: sans-serif;
+        float: left;
+
+    }
+
 
 
 }
@@ -473,13 +477,6 @@ position: absolute;}
         margin: auto;
         width: 50%;
         padding-top: 50px;
-    }
-
-    .logo {
-        width: 30%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 
