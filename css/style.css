@@ -448,6 +448,25 @@ body input:checked ~ nav > ul > li > .pictext {
 }
 .hairtitle{font-size: 1em;}
 .gifcut{width: 60%;}
+.hair{
+    padding-top: 5px;
+    text-align: left;
+}
+
+#priceListColor, #pricelistCut, #pricelistColorCut{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p.hairprice{
+    margin-top: 0;
+}
+
+h1.hairtitle{
+    margin-bottom: 0;
+    font-size:  0.75em;
+}
+
 
 
 /*DOODLES*/
