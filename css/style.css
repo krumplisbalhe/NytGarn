@@ -64,11 +64,6 @@ body {
 
 /*SVG ANIMATED PICTURE ON MAIN PAGE*/
 
-.svgcontainer {
-    margin: auto;
-    padding-top: 100px;
-
-}
 
 svg {
     width: 100%;
@@ -455,6 +450,33 @@ font-family: "Helvetica";}
 
 
 /*DOODLES*/
+.doodwrap{display: flex;
+flex-direction: column;
+padding-top: 20px;}
+
+.dood1,.dood3{display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+    flex-basis: auto;
+}
+.dood2{display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+    flex-basis: auto;}
+
+
+
+.doodsize{width: 20%;
+  filter: contrast(150%);
+}
+
+.dryer{flex:1;}
+.lava{flex: 1;}
+.svgcontainer { flex: 2;
+}
+
+
+
 .rockhand{width: 8%;
 float: left;
 position: absolute;
