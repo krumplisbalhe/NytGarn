@@ -28,16 +28,13 @@ a{font-family: titles;
 }
 /*Black text*/
 
-.bookindex {
+.bookindex, .bookindexwhite {
     display: inline-block;
-    color: black;
     margin-right: 0;
 
 }
 
-.bookbutindexwhite{ overflow: hidden;
-    color: #FFFFFF}
-.bookbutindex, .bookbutindexwhite{
+.bookbut, .bookbutwhite{
     width: 50%;
     padding-right: 0px;
 }
@@ -50,7 +47,14 @@ a{font-family: titles;
     background-position: center;
     background-size: contain;
 }
-
+.bookindexwhite:hover{
+    background-image: url(/img/white_flash.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 3%;
+    background-position: center;
+    background-size: contain;
+}
 body {
     background-color: #f3d102;
     font-family: "Helvetica";
@@ -62,6 +66,7 @@ body {
 
 .svgcontainer {
     margin: auto;
+    padding-top: 100px;
 
 }
 
@@ -420,11 +425,30 @@ body input:checked ~ nav > ul > li {
 .rockhand{width: 8%;
 float: left;
 position: absolute;
-padding-left: 15px;}
+padding-left: 15px;
+}
 
+.hairclip{width: 5%;
+    align-self: center;
+position: absolute;}
+
+.hairclip2{
+    float: right;
+    width: 5%;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+<<<<<<< HEAD
 .hairclip{width: 8%;}
 
 
+=======
+>>>>>>> origin/master
 /* L A P T O P  V I E W */
 
 @media (min-width: 600px) {
