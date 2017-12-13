@@ -502,7 +502,7 @@ left: 65%;}
     width: 80%;
 transform: rotate(170deg);
     right: 150%;
-    bottom: 80%;
+    bottom: 50%;
 }
 #lavalamp{width: 10%;}
 #disco{width: 40%;}
@@ -514,15 +514,17 @@ width: 50%;
     bottom: 50%;
 }
 #picturedoodle{
-    width: 40%;
+    width: 30%;
     position: relative;
-    left: 60%;
+    left: 70%;
+    top: 50%;
 }
 
 #bubble{
     width: 60%;
     position: relative;
-    bottom: 85%;
+    bottom: 10%;
+    left:30%;
     transform: rotate(-20deg);
 
 }
@@ -530,8 +532,8 @@ width: 50%;
 #hairdoodle{
     width: 40%;
     position: relative;
-    bottom: 50%;
-    right: 20%;
+    right: 10%;
+    top: 30%;
 
 }
 
