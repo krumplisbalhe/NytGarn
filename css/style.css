@@ -142,19 +142,42 @@ svg {
 
 
 
-/*What is garn subpage*/
+/*What is garn subpage on MOBILE*/
 
 .whatisgarnbody {
     background-color: #d86200;
 }
 
-.video {
-    width="200" height="100"
-}
-
 .whatisgarntitle {
     text-align: center;
+    padding-bottom: 0px;
+        padding-top: 30px;
 }
+
+.aboutgarnwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    z-index: 1;
+}
+
+ .butik {
+        color: white;
+    text-align: justify;
+     padding: 1em;
+     padding-top:0;
+}
+
+.butiktext{
+    text-align: justify;
+    letter-spacing: 0;
+    margin-top:0;
+}
+
 
 /*BURGER MENU MOBILE*/
 
@@ -259,6 +282,7 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    z-index: 2;
 
 }
 
@@ -500,18 +524,6 @@ position: absolute;}
         text-align: center;
     }
 
-    .video {
-        grid-area: vid;
-
-    }
-
-    .butik {
-        grid-area: abt;
-        padding-left: 13em;
-        padding-right: 13em;
-        color: white;
-    }
-
 
 
     h2 {
@@ -667,22 +679,13 @@ position: fixed;
         text-align: center;
     }
 
-    .video {
-        grid-area: vid;
-    }
-
-    .butik {
-        grid-area: abt;
-        padding-left: 13em;
-        padding-right: 13em;
-        color: white;
-    }
-
 
     .friends {
         width: 20%;
     }
     /*Mia and Malu subpage on DESKTOP*/
+
+
     /* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
     .instaicon {
         width: 8%;
@@ -734,9 +737,8 @@ position: fixed;
     color: white;
 }
 
+
 color: white;
-
-
 
 
 .colprices:after {
@@ -759,5 +761,41 @@ color: white;
     flex-direction: column;
     align-items: flex-start;
 }
+
+/*What is Garn on DESKTOP*/
+
+.aboutgarnwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+    .whatisgarntitle{
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+
+.video{
+    width:50%;
+}
+
+ .butik {
+        color: white;
+    text-align: justify;
+     padding: 1em;
+     width: 50%;
+      padding-top:0px;
+}
+
+.butiktext{
+    text-align: justify;
+    letter-spacing: 0;
+    margin-top: 0;
+
+}
+
 .mappic{width: 85%;}
+
 }
