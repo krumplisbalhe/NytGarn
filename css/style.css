@@ -107,7 +107,8 @@ svg {
     width: 50px;
     text-align: center;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 5em;
+    height: 50px;
 
 }
 
@@ -428,6 +429,7 @@ body input:checked ~ nav > ul > li > .pictext {
     align-items: center;
 
 }
+.mappic{width: 100%}
 .contactbody{background-color:#32353a;}
 
 /*Prices page on MOBILE*/
@@ -444,9 +446,11 @@ body input:checked ~ nav > ul > li > .pictext {
 .buttonforhair:hover {  -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-
 }
-.hairtitle{font-size: 1em;}
+  .hairprice {
+      font-size: 0.8em;
+font-family: "Helvetica";}
+.hairtitle{font-size: 0.8em;}
 .gifcut{width: 60%;}
 
 
@@ -488,7 +492,7 @@ position: absolute;}
         justify-content: flex-start;
         align-items: center;
         align-content: space-between;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
 
     .toplogo{
@@ -709,9 +713,8 @@ position: fixed;
         text-align: center;
         display: block;
     }
-    .hairprice {
-        font-size: 1em;
-    }
+
+
 
     .title1 {
         border: 1px white solid;
@@ -725,6 +728,7 @@ position: fixed;
     }
 
 
+
 .firstcolumn {
     align-items: center;
 }
@@ -732,6 +736,9 @@ position: fixed;
 .colprices {
     color: white;
 }
+
+
+color: white;
 
 
 .colprices:after {
@@ -789,8 +796,6 @@ position: fixed;
 
 }
 
-
-
-
+.mappic{width: 85%;}
 
 }
