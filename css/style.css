@@ -93,20 +93,8 @@ svg {
 /*Header on MOBILE*/
 .homebut {
     display: block;
-    width: 70%;
-}
-
-.headercontainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.headerbooking .headerlogo .headerburger{
-    margin:0;
-    padding:0;
+    margin: auto;
+    width: 40%;
 }
 
 
@@ -473,13 +461,6 @@ position: absolute;}
         margin: auto;
         width: 50%;
         padding-top: 30px;
-    }
-
-    .logo {
-        width: 30%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 
