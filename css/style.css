@@ -472,8 +472,7 @@ h1.hairtitle{
 
 /*DOODLES*/
 .doodwrap{display: flex;
-flex-direction: column;
-padding-top: 20px;}
+flex-direction: column;}
 
 .dood1,.dood3{display: flex;
 flex-direction: row;
@@ -504,25 +503,35 @@ transform: rotate(170deg);
     right: 150%;
     bottom: 50%;
 }
-#lavalamp{width: 10%;
-left: 20%;}
-#disco{width: 40%;}
+#lavalamp{position: relative;
+    width: 15%;
+left: 100%;
+}
+
+#hairdryer{position: relative;
+    width: 43%;
+    transform: rotate(10deg);
+left: 20%;
+bottom: 8%;}
+
+#disco{width: 40%;
+bottom: 25%;}
 #motorbike{
-width: 50%;
+width: 45%;
     position:relative;
-    left: 100%;
+    left: 90%;
     transform: rotate(-20deg);
-    bottom: 50%;
+    bottom: 35%;
 }
 #picturedoodle{
-    width: 30%;
+    width: 20%;
     position: relative;
     left: 70%;
     top: 50%;
 }
 
 #bubble{
-    width: 60%;
+    width: 50%;
     position: relative;
     bottom: 10%;
     left:30%;
@@ -531,33 +540,27 @@ width: 50%;
 }
 
 #hairdoodle{
-    width: 40%;
+    width: 30%;
     position: relative;
     right: 10%;
     top: 30%;
 
 }
 
-    right: 100%;
-    bottom: 60%;}
-
-#lavalamp{width: 12%;}
 
 #disco{position: relative;
-    width: 30%;
-;
+    width: 28%;
+
 }
-#hairdryer{position: relative;
-    width: 30%;
-    transform: rotate(30deg);
-left: 90%;
-top: 10%;}
 
 #woman{position: relative;
     width: 30%;
-right: 25%;
-bottom: }
-
+right: 10%;
+top: 5%; }
+#heart{width: 50%;
+position: relative;
+right: 55%;
+bottom:}
 
 .rockhand{width: 8%;
 float: left;
