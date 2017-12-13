@@ -485,12 +485,15 @@ flex-wrap: nowrap;
     flex-basis: auto;}
 .doodsize{width: 20%;
   filter: contrast(150%);
-    animation: fadein 5s;
+    animation: loadingdoodles 2s ease-in-out 2s forwards;
+    opacity:0;
 }
 
-@keyframes fadein{
-    from{opacity:0;}
-    to{opacity: 1;}
+@keyframes loadingdoodles{
+    to{
+        opacity:1;
+    }
+
 }
 
 .dryer{flex:1;}
@@ -514,7 +517,8 @@ flex-wrap: nowrap;
 #scissor1{position: relative;
     width: 40%;
 transform: rotate(240deg);
-left: 65%;}
+left: 65%;
+}
 #scissor2{position: relative;
     width: 80%;
 transform: rotate(170deg);
@@ -600,6 +604,21 @@ position: absolute;}
         transform: scaleX(-1);
         filter: FlipH;
         -ms-filter: "FlipH";
+}
+
+.shakeyourbody{
+    -webkit-animation: shake 1s ease-in-out 0.1s infinite alternate;
+}
+
+@keyframes shake {
+ from {
+    transform: rotate(10deg);
+ }
+ to {
+   transform-origin:center center;
+   transform: rotate(-10deg);
+ }
+
 }
 
 /* L A P T O P  V I E W */
