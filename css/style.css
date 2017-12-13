@@ -504,7 +504,8 @@ transform: rotate(170deg);
     right: 150%;
     bottom: 50%;
 }
-#lavalamp{width: 10%;}
+#lavalamp{width: 10%;
+left: 20%;}
 #disco{width: 40%;}
 #motorbike{
 width: 50%;
@@ -549,8 +550,8 @@ width: 50%;
 #hairdryer{position: relative;
     width: 30%;
     transform: rotate(30deg);
-left: 40%;
-bottom: 20%;}
+left: 90%;
+top: 10%;}
 
 #woman{position: relative;
     width: 30%;
