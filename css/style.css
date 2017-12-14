@@ -24,18 +24,17 @@ p{font-family: "Helvetica";
     color: white;
 }
 a{font-family: titles;
-    font-size: 1.3em;
+    font-size: 0.8em;
 }
 /*Black text*/
 
 .bookindex, .bookindexwhite {
-    display: inline-block;
-    margin-right: 0;
-
-}
+    width: 70%;
+    display:inline-block;
+  }
 
 .bookbut, .bookbutwhite{
-    width: 50%;
+    width: 52%;
     padding-right: 0px;
 }
 
@@ -180,7 +179,7 @@ svg {
 
 span {
     text-transform: none;
-    opacity: .5;
+    opacity: 5;
     font-weight: 300;
     font-size: 12px;
 }
@@ -188,7 +187,8 @@ span {
 #burger {
     display: none;
 }
-
+.spanwhite{background: white;
+}
 label {
     position: fixed;
     top: 40px;
@@ -245,7 +245,7 @@ body input:checked + label span:last-child {
 }
 
 .cmt {
-    width: 32%;
+    width: 20%;
     padding: 5px;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -288,7 +288,7 @@ ul {
     position: fixed;
     margin: 0px;
     text-align: left;
-    top: 50px;
+    top:5px;
     ;
 }
 
@@ -304,7 +304,7 @@ li {
 
 a {
     float: none;
-    padding: 0;
+   margin-right: 0;
     display: block;
     text-decoration: none;
     color: black;
@@ -445,11 +445,11 @@ body input:checked ~ nav > ul > li > .pictext {
   .hairprice {
       font-size: 0.8em;
 font-family: "Helvetica";}
-.hairtitle{font-size: 0.8em;}
+.hairtitle{font-size: 1em;}
 .gifcut{width: 60%;}
 .hair{
     padding-top: 5px;
-    text-align: left;
+    text-align: center;
 }
 
 #priceListColor, #pricelistCut, #pricelistColorCut{
@@ -534,7 +534,7 @@ left: 110%;
 #hairdryer{position: relative;
     width: 43%;
     transform: rotate(10deg);
-left: 42%;
+left: 80%;
 bottom:}
 
 #disco{width: 40%;
@@ -680,12 +680,15 @@ position: absolute;}
         width: 20%;
     }
 
-
+.bookindex, .bookindexwhite {
+    width: 28%;
+    display: inline-block;
+    margin-right: 0;}
     /*BURGER menu on DESKTOP*/
     /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
     span {
         text-transform: none;
-        opacity: .5;
+        opacity: 3;
         font-weight: 300;
         font-size: 12px;
     }
@@ -705,12 +708,10 @@ position: absolute;}
     label span {
         position: absolute;
         width: 100%;
-        height: 2px;
-        top: 50%;
-        margin-top: -1px;
+        height: 3px;
         left: 0;
         display: block;
-        background: #020304;
+        background: #000;
         transition: .5s;
     }
 
@@ -742,10 +743,8 @@ position: absolute;}
     }
     .pictext {
         text-transform: uppercase;
-        font-weight: 700;
-        font-family: sans-serif;
         float: left;
-        padding: 30px;
+        padding: 10%;
     }
     .cmt {
         width: 45%;
@@ -756,6 +755,9 @@ position: absolute;}
         z-index: 2;
 
     }
+    a{font-family: titles;
+    font-size: 1.3em;
+}
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
 
 
@@ -783,8 +785,7 @@ position: absolute;}
     }
     body input:checked ~ nav > ul {
 position: fixed;
-        text-align: left;
-        top: 80px;
+       top:10%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;}
@@ -794,8 +795,6 @@ position: fixed;
         text-decoration: none;
         text-transform: uppercase;
         color: #020304;
-        font-weight: 700;
-        font-family: sans-serif;
         float: left;
 
     }
