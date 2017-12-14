@@ -413,7 +413,7 @@ body input:checked ~ nav > ul > li > .pictext {
 
 .description {
     color: white;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 
