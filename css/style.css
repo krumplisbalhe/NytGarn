@@ -19,22 +19,28 @@ h3 {
     font-size: 1.2em;
 }
 
-p{font-family: "Helvetica";
+p {
+    font-family: "Helvetica";
     letter-spacing: 2px;
     color: white;
 }
-a{font-family: titles;
+
+a {
+    font-family: titles;
     font-size: 0.8em;
 }
+
+
 /*Black text*/
 
-.bookindex, .bookindexwhite {
+.bookindex,
+.bookindexwhite {
     width: 70%;
-    display:inline-block;
+    display: inline-block;
+}
 
-  }
-
-.bookbut, .bookbutwhite{
+.bookbut,
+.bookbutwhite {
     width: 52%;
     padding-right: 0px;
 }
@@ -47,7 +53,8 @@ a{font-family: titles;
     background-position: center;
     background-size: contain;
 }
-.bookindexwhite:hover{
+
+.bookindexwhite:hover {
     background-image: url(../img/white_flash.png);
     background-repeat: no-repeat;
     display: inline-block;
@@ -55,6 +62,10 @@ a{font-family: titles;
     background-position: center;
     background-size: contain;
 }
+.bookinner{
+    display: inline-block;
+}
+
 body {
     background-color: #f3d102;
     font-family: "Helvetica";
@@ -62,8 +73,8 @@ body {
     padding: 25px;
 }
 
-/*SVG ANIMATED PICTURE ON MAIN PAGE*/
 
+/*SVG ANIMATED PICTURE ON MAIN PAGE*/
 
 svg {
     width: 100%;
@@ -85,15 +96,14 @@ svg {
     }
 }
 
+
 /*Header on MOBILE*/
+
 .homebut {
     display: block;
     margin: auto;
     width: 40%;
 }
-
-
-
 
 .friends {
     width: 40%;
@@ -109,7 +119,6 @@ svg {
 }
 
 
-
 /*What is garn subpage on MOBILE*/
 
 .whatisgarnbody {
@@ -119,35 +128,36 @@ svg {
 .whatisgarntitle {
     text-align: center;
     padding-bottom: 0px;
-        padding-top: 30px;
+    padding-top: 30px;
 }
 
-.aboutgarnwrapper{
+.aboutgarnwrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.video{
+.video {
     z-index: 1;
 }
 
- .butik {
-        color: white;
+.butik {
+    color: white;
     text-align: justify;
-     padding: 1em;
-     padding-top:0;
+    padding: 1em;
+    padding-top: 0;
 }
 
-.butiktext{
+.butiktext {
     text-align: justify;
     letter-spacing: 0;
-    margin-top:0;
+    margin-top: 0;
 }
 
 
 /*BURGER MENU MOBILE*/
+
 
 /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
 
@@ -161,8 +171,11 @@ span {
 #burger {
     display: none;
 }
-.spanwhite{background: white;
+
+.spanwhite {
+    background: white;
 }
+
 label {
     position: fixed;
     top: 40px;
@@ -196,6 +209,7 @@ body label:hover {
     cursor: pointer;
 }
 
+
 /* burger button movement 'animation' on MOBILE */
 
 body input:checked + label span {
@@ -221,25 +235,27 @@ body input:checked + label span:last-child {
 .cmt {
     width: 20%;
     padding: 5px;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     /*https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css
    -webkit-filter: drop-shadow(3px 3px 3px #999);
-  filter: drop-shadow(2px 2px 2px #999)*/;
+  filter: drop-shadow(2px 2px 2px #999)*/
+    ;
 }
 
+
 /*https://codepen.io/Remedy/pen/ZYJrpp*/
-.cmt:hover{
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+
+.cmt:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
 /*.cmt:hover {
 	-webkit-filter: drop-shadow(0px 0px 8px #f3d102);*/
-
 
 nav {
     background: #f4afc2;
@@ -252,8 +268,8 @@ nav {
     justify-content: center;
     z-index: 2;
     overflow: auto;
-
 }
+
 
 /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
 
@@ -263,8 +279,7 @@ ul {
     margin: 0px;
     text-align: left;
     top: 50px;
-
-    top:5px;
+    top: 5px;
     ;
 }
 
@@ -280,7 +295,7 @@ li {
 
 a {
     float: none;
-   margin-right: 0;
+    margin-right: 0;
     display: block;
     text-decoration: none;
     color: black;
@@ -296,8 +311,8 @@ nav > ul > li > a {
 }
 
 nav > ul > li > .pictext {
-       display: none;
-    }
+    display: none;
+}
 
 body input:checked ~ nav {
     height: 100%;
@@ -310,19 +325,15 @@ body input:checked ~ nav > ul > li {
 }
 
 body input:checked ~ nav > ul > li > .pictext {
-        display: block;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #020304;
-        font-weight: 700;
-        font-family: sans-serif;
-        float: left;
-
-    }
-
-
-
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #020304;
+    font-weight: 700;
+    font-family: sans-serif;
+    float: left;
 }
+
 
 /*BOOKING BUTTON*/
 
@@ -333,6 +344,7 @@ body input:checked ~ nav > ul > li > .pictext {
     cursor: pointer;
 }
 
+
 /*FOOTER*/
 
 .foot {
@@ -341,11 +353,12 @@ body input:checked ~ nav > ul > li > .pictext {
     bottom: 0;
     height: 80px;
     width: 100%;
-    overflow:visible;
+    overflow: visible;
     text-align: center;
     z-index: -1;
     padding-top: 40px;
 }
+
 
 /*Footer icons*/
 
@@ -366,20 +379,23 @@ body input:checked ~ nav > ul > li > .pictext {
     color: white;
 }
 
-.blackfb, .blackinst{color: black;
+.blackfb,
+.blackinst {
+    color: black;
 }
 
-.fa-instagram:before{
+.fa-instagram:before {
     font-size: 2em;
 }
 
-.fa-facebook:before{
+.fa-facebook:before {
     font-size: 2em;
 }
 
-.footwrapper{
+.footwrapper {
     padding-top: 50px;
 }
+
 
 /*Mia and Malu subpage on MOBILE*/
 
@@ -387,27 +403,17 @@ body input:checked ~ nav > ul > li > .pictext {
     background-color: #187552;
 }
 
+#aboutlist{
+        display: flex;
+    flex-direction: column;
+        text-align: center;
+    }
+.description{
+        text-align: justify;
+    }
+
 .instaicon {
     width: 8%;
-}
-
-.mmcontainer {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.malue {
-    float: left;
-    position: relative;
-    width: 50vw;
-    height: 100vh;
-}
-
-.mia {
-    float: left;
-    width: 50vw;
-    height: 100vh;
 }
 
 .description {
@@ -415,6 +421,9 @@ body input:checked ~ nav > ul > li > .pictext {
     font-size: 0.9em;
 }
 
+.hairdresser{
+    padding-bottom: 100px;
+}
 
 /*Join us subpage on MOBILE*/
 
@@ -427,16 +436,23 @@ body input:checked ~ nav > ul > li > .pictext {
     z-index: -1;
 }
 
+
 /*Contact page on MOBILE*/
 
 .contactwrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.mappic{width: 100%}
-.contactbody{background-color:#32353a;}
+
+.mappic {
+    width: 100%
+}
+
+.contactbody {
+    background-color: #32353a;
+}
+
 
 /*Prices page on MOBILE*/
 
@@ -445,206 +461,463 @@ body input:checked ~ nav > ul > li > .pictext {
 #toggle3 {
     display: none;
 }
-.pricesbody{background-color: #0971c4;}
-.buttonforhair { cursor: pointer;
-   width: 40%;
+
+.pricesbody {
+    background-color: #0971c4;
 }
-.buttonforhair:hover {  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+
+.buttonforhair {
+    cursor: pointer;
+    width: 40%;
 }
-  .hairprice {
-      font-size: 0.8em;
-font-family: "Helvetica";}
-.hairtitle{font-size: 1em;}
-.gifcut{width: 60%;}
-.hair{
+
+.buttonforhair:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hairprice {
+    font-size: 0.8em;
+    font-family: "Helvetica";
+}
+
+.hairtitle {
+    font-size: 1em;
+}
+
+.gifcut {
+    width: 50%;
+}
+
+.hair {
     padding-top: 5px;
     text-align: center;
 }
 
-#priceListColor, #pricelistCut, #pricelistColorCut{
+#priceListColor,
+#pricelistCut,
+#pricelistColorCut {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-p.hairprice{
+p.hairprice {
     margin-top: 0;
 }
 
-h1.hairtitle{
+h1.hairtitle {
     margin-bottom: 0;
-    font-size:  0.75em;
+    font-size: 0.75em;
+}
+
+.colpric{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
+/*DOODLES on MOBILE*/
 
+.doodwrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+}
 
-
-/*DOODLES*/
-.doodwrap{display: flex;
-flex-direction: column;
-padding-top: 20%;}
-
-.dood1,.dood3{display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
+.dood1,
+.dood3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     flex-basis: auto;
 }
-.dood2{display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-    flex-basis: auto;}
-.doodsize{width: 20%;
-  filter: contrast(150%);
+
+.dood2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+}
+
+.doodsize {
+    width: 20%;
+    filter: contrast(150%);
     animation: loadingdoodles 2s ease-in-out 2s forwards;
-    opacity:0;
+    opacity: 0;
 }
 
-@keyframes loadingdoodles{
-    to{
-        opacity:1;
+@keyframes loadingdoodles {
+    to {
+        opacity: 1;
     }
-
 }
 
-.dryer{flex:1;}
-.lava{flex: 1;}
-.svgcontainer { flex: 2;
+.dryer {
+    flex: 1;
 }
+
+.lava {
+    flex: 1;
+}
+
+.svgcontainer {
+    flex: 2;
+}
+
 
 /*seperate doodles*/
-#pacman{
-    width: 30%;
+
+#pacman {
+    width: 70%;
     position: relative;
     bottom: 10%;
-    left:30%;
+    left: 30%;
     transform: rotate(-10deg);
+    visibility: hidden;
 }
-#comb{
-     width: 50%;
+
+#comb {
+    width: 50%;
     position: relative;
     transform: rotate(30deg);
+    visibility: hidden;
 }
-#scissor1{position: relative;
-    width: 40%;
-transform: rotate(240deg);
-left: 65%;
+
+#scissor1 {
+    position: relative;
+    width: 90%;
+    transform: rotate(240deg);
+    left: 45%;
 }
-#scissor2{position: relative;
-    width: 80%;
-transform: rotate(170deg);
-    right: 150%;
-    bottom: 50%;
+
+#scissor2 {
+    position: relative;
+    width: 190%;
+    transform: rotate(170deg);
+    right: 100%;
+    bottom: 90%;
 }
-#lavalamp{position: relative;
+
+#lavalamp {
+    position: relative;
     width: 13%;
-left: 110%;
+    left: 110%;
     bottom: 10%;
 }
 
-#hairdryer{position: relative;
-    width: 43%;
+#hairdryer {
+    position: relative;
+    width: 80%;
     transform: rotate(10deg);
-left: 80%;
-bottom:}
-
-#disco{width: 40%;
-bottom: 25%;}
-#motorbike{
-width: 50%;
-    position:relative;
-    left: 105%;
-    transform: rotate(-20deg);
-    bottom: 22%;
+    left: 10%;
+    top: 20%;
 }
-#picturedoodle{
+
+#disco {
+    width: 70%;
+    top: 20%;
+}
+
+#motorbike {
+    width: 90%;
+    position: relative;
+    left: 130%;
+    transform: rotate(-20deg);
+    bottom: 30%;
+    visibility: visible;
+}
+
+#picturedoodle {
+visibility: hidden;
     width: 25%;
     position: relative;
     left: 70%;
     top: 40%;
 }
 
-#bubble{
+#bubble {
     width: 50%;
     position: relative;
     bottom: 10%;
-    left:30%;
+    left: 30%;
     transform: rotate(-20deg);
-
+    visibility: hidden;
 }
 
-#hairdoodle{
+#hairdoodle {
     width: 30%;
     position: relative;
     right: 10%;
     top: 30%;
-
+    visibility: hidden;
 }
 
 
-#disco{position: relative;
-    width: 28%;
-
+#woman {
+    position: relative;
+    width: 40%;
+    left: 20%;
+    top: 30%;
 }
 
-#woman{position: relative;
-    width: 30%;
-right: 10%;
-top: 5%; }
-#heart{width: 50%;
-position: relative;
-right: 55%;
-bottom:}
-
-.rockhand{width: 8%;
-float: left;
-position: absolute;
-padding-left: 15px;
+#heart {
+    width: 50%;
+    position: relative;
+    right: 55%;
+    visibility: hidden;
 }
 
-.hairclip{width: 5%;
+.rockhand {
+    width: 8%;
+    float: left;
+    position: absolute;
+    padding-left: 15px;
+}
+
+.hairclip {
+    width: 5%;
     align-self: center;
-position: absolute;}
+    position: absolute;
+}
 
-.hairclip2{
+.hairclip2 {
     float: right;
     width: 5%;
     -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
-.shakeyourbody{
+.shakeyourbody {
     -webkit-animation: shake 1s ease-in-out 0.1s infinite alternate;
 }
 
 @keyframes shake {
- from {
-    transform: rotate(10deg);
- }
- to {
-   transform-origin:center center;
-   transform: rotate(-10deg);
- }
-
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform-origin: center center;
+        transform: rotate(-10deg);
+    }
 }
+
 
 /* L A P T O P  V I E W */
 
 @media (min-width: 600px) {
+
+    /*DOODLES on LAPTOP*/
+
+.doodwrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+}
+
+.dood1,
+.dood3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+}
+
+.dood2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+}
+
+.doodsize {
+    width: 20%;
+    filter: contrast(150%);
+    animation: loadingdoodles 2s ease-in-out 2s forwards;
+    opacity: 0;
+}
+
+@keyframes loadingdoodles {
+    to {
+        opacity: 1;
+    }
+}
+
+.dryer {
+    flex: 1;
+}
+
+.lava {
+    flex: 1;
+}
+
+.svgcontainer {
+    flex: 2;
+}
+
+
+/*seperate doodles*/
+
+#pacman {
+    width: 30%;
+    position: relative;
+    bottom: 10%;
+    left: 30%;
+    transform: rotate(-10deg);
+    visibility: visible;
+}
+
+#comb {
+    width: 50%;
+    position: relative;
+    transform: rotate(30deg);
+    visibility: visible;
+}
+
+#scissor1 {
+    position: relative;
+    width: 40%;
+    transform: rotate(240deg);
+    left: 65%;
+}
+
+#scissor2 {
+    position: relative;
+    width: 80%;
+    transform: rotate(170deg);
+    right: 150%;
+    bottom: 50%;
+}
+
+#lavalamp {
+    position: relative;
+    width: 13%;
+    left: 110%;
+    bottom: 10%;
+}
+
+#hairdryer {
+    position: relative;
+    width: 43%;
+    transform: rotate(10deg);
+    left: 80%;
+}
+
+#disco {
+    width: 40%;
+    bottom: 25%;
+    visibility: visible;
+}
+
+#motorbike {
+    width: 50%;
+    position: relative;
+    left: 115%;
+    transform: rotate(-20deg);
+    bottom: 2%;
+    visibility: visible;
+}
+
+#picturedoodle {
+    visibility: visible;
+    width: 25%;
+    position: relative;
+    left: 70%;
+    top: 40%;
+    visibility: visible;
+}
+
+#bubble {
+    width: 50%;
+    position: relative;
+    bottom: 10%;
+    left: 30%;
+    transform: rotate(-20deg);
+    visibility: visible;
+}
+
+#hairdoodle {
+    width: 30%;
+    position: relative;
+    right: 10%;
+    top: 30%;
+    visibility: visible;
+}
+
+#disco {
+    position: relative;
+    width: 28%;
+    visibility: visible;
+}
+
+#woman {
+    position: relative;
+    width: 30%;
+    right: 10%;
+    top: 5%;
+}
+
+#heart {
+    width: 50%;
+    position: relative;
+    right: 55%;
+    visibility: visible;
+}
+
+.rockhand {
+    width: 8%;
+    float: left;
+    position: absolute;
+    padding-left: 15px;
+}
+
+.hairclip {
+    width: 5%;
+    align-self: center;
+    position: absolute;
+}
+
+.hairclip2 {
+    float: right;
+    width: 5%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.shakeyourbody {
+    -webkit-animation: shake 1s ease-in-out 0.1s infinite alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform-origin: center center;
+        transform: rotate(-10deg);
+    }
+}
+
+
     .book {
         width: 30%
     }
-.doodwrap{display: flex;
-flex-direction: column;
-    padding-top: 0;}
+    .doodwrap {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
     /*header*/
-
-    .headerwrapper{
+    .headerwrapper {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -652,20 +925,16 @@ flex-direction: column;
         align-content: space-between;
         padding-bottom: 80px;
     }
-
-    .toplogo{
+    .toplogo {
         position: absolute;
         left: 35vw;
         width: 400px;
     }
-
     .homebut {
         margin: auto;
         width: 50%;
         padding-top: 80px;
     }
-
-
     .logo {
         width: 30%;
         display: block;
@@ -673,7 +942,6 @@ flex-direction: column;
         margin-right: auto;
         align-items: center;
     }
-
     .about {
         display: grid;
         grid-template-columns: 1fr;
@@ -681,23 +949,19 @@ flex-direction: column;
         grid-gap: 2em;
         text-align: center;
     }
-
-
-
     h2 {
         color: white;
         text-align: center;
     }
-
-
     .friends {
         width: 20%;
     }
-
-.bookindex, .bookindexwhite {
-    width: 28%;
-    display: inline-block;
-    margin-right: 0;}
+    .bookindex,
+    .bookindexwhite {
+        width: 28%;
+        display: inline-block;
+        margin-right: 0;
+    }
     /*BURGER menu on DESKTOP*/
     /*https://codepen.io/jlnljn/pen/LkXoBb?limit=all&page=2&q=burger+menu*/
     span {
@@ -709,7 +973,6 @@ flex-direction: column;
     #burger {
         display: none;
     }
-
     label {
         position: fixed;
         top: 40px;
@@ -718,7 +981,6 @@ flex-direction: column;
         width: 15px;
         z-index: 5;
     }
-
     label span {
         position: absolute;
         width: 100%;
@@ -728,29 +990,23 @@ flex-direction: column;
         background: #000;
         transition: .5s;
     }
-
     label span:first-child {
         top: 3px;
     }
-
     label span:last-child {
         top: 16px;
     }
-
     body label:hover {
         cursor: pointer;
     }
-
     body input:checked + label span {
         opacity: 0;
         top: 50%;
     }
-
     body input:checked + label span:first-child {
         opacity: 1;
         transform: rotate(405deg);
     }
-
     body input:checked + label span:last-child {
         opacity: 1;
         transform: rotate(-405deg);
@@ -767,52 +1023,43 @@ flex-direction: column;
     nav {
         background: #f4afc2;
         z-index: 2;
-
     }
-    a{font-family: titles;
-    font-size: 1.3em;
-}
+    a {
+        font-family: titles;
+        font-size: 1.3em;
+    }
     /* this > sign is a child selector, which means it only select elements inside parent one, in this case - only ul inside nav*/
-
-
     nav > ul > li {
         opacity: 0;
         transition: 0s;
         transition-delay: 0s;
     }
-
     li {
         list-style-type: none;
         display: inline;
-
     }
-
     nav > ul > li > .pictext {
-       display: none;
-
+        display: none;
     }
     body input:checked ~ nav {
         height: 100%;
         transition-delay: 0s;
-    ;
-
+        ;
     }
     body input:checked ~ nav > ul {
-position: fixed;
-       top:10%;
+        position: fixed;
+        top: 10%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;}
-
+        flex-wrap: wrap;
+    }
     body input:checked ~ nav > ul > li > .pictext {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
         color: #020304;
         float: left;
-
     }
-
     body input:checked ~ nav > ul > li {
         opacity: 1;
         transition-delay: 0s;
@@ -820,14 +1067,11 @@ position: fixed;
         width: calc(100% / 3);
         text-align: center;
     }
-
     body input:checked ~ nav > ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
     }
-
     .about {
         display: grid;
         grid-template-columns: 1fr;
@@ -835,34 +1079,31 @@ position: fixed;
         grid-gap: 2em;
         text-align: center;
     }
-
-
     .friends {
         width: 20%;
     }
     /*Mia and Malu subpage on DESKTOP*/
-
-
     /* https://digwp.com/2010/03/wordpress-post-content-multiple-columns/#filter **/
     .instaicon {
         width: 8%;
     }
-
-    .miamaluecontent {
-        -moz-column-count: 2;
-        -moz-column-gap: 10px;
-        -moz-column-rule: none;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 10px;
-        -webkit-column-rule: none;
-        column-count: 2;
-        column-gap: 100px;
-        column-rule: none;
-        padding-bottom: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
-        text-align: center
+    #aboutlist{
+        display: flex;
+        text-align: center;
+        flex-direction: row;
     }
+
+    .hairdresser{
+        flex: 1;
+        width: 50%;
+        padding: 70px;
+        padding-top: 0;
+
+    }
+    .description{
+        text-align: justify;
+    }
+
     /*Prices page on desktop*/
     .colpric {
         float: left;
@@ -871,87 +1112,60 @@ position: fixed;
         display: block;
         padding-bottom: 60px;
     }
-
     .title1 {
         border: 1px white solid;
     }
-
     .firstcolumn {
         align-items: center;
     }
     .title1 {
         border: 1px white solid;
     }
-
-
-
-.firstcolumn {
-    align-items: center;
-}
-
-.colprices {
-    color: white;
-}
-
-
-color: white;
-
-
-.colprices:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
-
-/*Contact page on DESKTOP*/
-
-.contactwrapper {
-    flex-direction: row;
-    align-items: left;
-    justify-content: space-around;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/*What is Garn on DESKTOP*/
-
-.aboutgarnwrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
-
-    .whatisgarntitle{
+    .firstcolumn {
+        align-items: center;
+    }
+    .colprices {
+        color: white;
+    }
+    /*Contact page on DESKTOP*/
+    .contactwrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /*What is Garn on DESKTOP*/
+    .aboutgarnwrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .whatisgarntitle {
         padding-bottom: 0px;
         padding-top: 30px;
     }
-
-.video{
-    width:50%;
-}
-
- .butik {
+    .video {
+        width: 50%;
+    }
+    .butik {
         color: white;
-    text-align: justify;
-     padding: 1em;
-     width: 50%;
-      padding-top:0px;
-}
-
-.butiktext{
-    text-align: justify;
-    letter-spacing: 0;
-    margin-top: 0;
-
-}
-
-.mappic{width: 85%;}
-
+        text-align: justify;
+        padding: 1em;
+        width: 50%;
+        padding-top: 0px;
+    }
+    .butiktext {
+        text-align: justify;
+        letter-spacing: 0;
+        margin-top: 0;
+    }
+    .mappic {
+        width: 85%;
+    }
 }
