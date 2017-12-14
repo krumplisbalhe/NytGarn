@@ -1044,7 +1044,6 @@ visibility: hidden;
     body input:checked ~ nav {
         height: 100%;
         transition-delay: 0s;
-        ;
     }
     body input:checked ~ nav > ul {
         position: fixed;
