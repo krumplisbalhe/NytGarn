@@ -93,34 +93,7 @@ svg {
 }
 
 
-/*Footer icons*/
 
-.fa {
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 5em;
-    height: 50px;
-
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    color: white;
-}
-
-.fa-instagram {
-    color: white;
-}
-
-.blackfb, .blackinst{color: black;
-}
 
 .friends {
     width: 40%;
@@ -274,10 +247,10 @@ nav {
     left: 0;
     width: 100%;
     transition: .0s;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     z-index: 2;
+    overflow: auto;
 
 }
 
@@ -289,7 +262,6 @@ ul {
     margin: 0px;
     text-align: left;
     top: 50px;
-    ;
 }
 
 nav > ul > li {
@@ -363,11 +335,46 @@ body input:checked ~ nav > ul > li > .pictext {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 80px;
     width: 100%;
-    overflow: hidden;
+    overflow:visible;
     text-align: center;
     z-index: -1;
+    padding-top: 40px;
+}
+
+/*Footer icons*/
+
+.fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.blackfb, .blackinst{color: black;
+}
+
+.fa-instagram:before{
+    font-size: 2em;
+}
+
+.fa-facebook:before{
+    font-size: 2em;
+}
+
+.footwrapper{
+    padding-top: 50px;
 }
 
 /*Mia and Malu subpage on MOBILE*/
